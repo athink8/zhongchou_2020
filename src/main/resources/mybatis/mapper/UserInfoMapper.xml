@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.UserInfoDao">
+
+    <select id="findUserInfo" resultType="UserInfo">
+        select * from zc_user_info
+        <where>
+            <if test="userInfo!=null">
+                <if test="userInfo.status!=null">
+                    and status=#{userInfo.status}
+                </if>
+                <if test="userInfo.id!=null">
+                    and id=#{userInfo.id}
+                </if>
+                <if test="userInfo.uUsername!=null">
+                    and u_username=#{userInfo.uUsername}
+                </if>
+                <if test="userInfo.uPassword!=null">
+                    and u_password=#{userInfo.uPassword}
+                </if>
+                <if test="userInfo.uEmail!=null">
+                    and u_email=#{userInfo.uEmail}
+                </if>
+                <if test="userInfo.uPhone!=null">
+                    and u_phone=#{userInfo.uPhone}
+                </if>
+                <if test="userInfo.uLock!=null">
+                    and u_lock=#{userInfo.uLock}
+                </if>
+                <if test="userInfo.code!=null">
+                    and code=#{userInfo.code}
+                </if>
+            </if>
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <!-- 根据ids 查询项目-->
+    <select id="findUserInfoByIds" resultType="UserInfo">
+        select * from zc_user_info where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateUserInfo" useGeneratedKeys="true" keyProperty="id">
+        update zc_user_info
+        <set>
+            <if test="userInfo!=null">
+                <if test="userInfo.id!=null">
+                    ,id=#{userInfo.id}
+                </if>
+                <if test="userInfo.status!=null">
+                    ,status=#{userInfo.status}
+                </if>
+                <if test="userInfo.uUsername!=null">
+                    ,u_username=#{userInfo.uUsername}
+                </if>
+                <if test="userInfo.uPassword!=null">
+                    ,u_password=#{userInfo.uPassword}
+                </if>
+                <if test="userInfo.uEmail!=null">
+                    ,u_email=#{userInfo.uEmail}
+                </if>
+                <if test="userInfo.uPhone!=null">
+                    ,u_phone=#{userInfo.uPhone}
+                </if>
+                <if test="userInfo.code!=null">
+                    ,code=#{userInfo.code}
+                </if>
+                <if test="userInfo.uLock!=null">
+                    ,u_lock=#{userInfo.uLock}
+                </if>
+            </if>
+        </set>
+        where id=#{userInfo.id}
+    </update>
+
+    <insert id="insertUserInfo" useGeneratedKeys="true" keyProperty="id">
+        insert into zc_user_info
+        <set>
+            <if test="userInfo!=null">
+                <if test="userInfo.status!=null">
+                    ,status=#{userInfo.status}
+                </if>
+                <if test="userInfo.uUsername!=null">
+                    ,u_username=#{userInfo.uUsername}
+                </if>
+                <if test="userInfo.uPassword!=null">
+                    ,u_password=#{userInfo.uPassword}
+                </if>
+                <if test="userInfo.uEmail!=null">
+                    ,u_email=#{userInfo.uEmail}
+                </if>
+                <if test="userInfo.uPhone!=null">
+                    ,u_phone=#{userInfo.uPhone}
+                </if>
+                <if test="userInfo.code!=null">
+                    ,code=#{userInfo.code}
+                </if>
+                <if test="userInfo.uLock!=null">
+                    ,u_lock=#{userInfo.uLock}
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteUserInfo">
+        delete
+        from zc_user_info
+        <where>
+            <if test="userInfo!=null">
+                <if test="userInfo.id!=null">
+                    id=#{userInfo.id}
+                </if>
+            </if>
+        </where>
+    </delete>
+</mapper>
+

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.UserPropertyDao">
+    <select id="findUserProperty" resultType="UserProperty">
+        select * from zc_user_property
+        <where>
+            <if test="userProperty!=null">
+                <if test="userProperty.status!=null">
+                    and status=#{userProperty.status}
+                </if>
+                <if test="userProperty.id!=null">
+                    and id=#{userProperty.id}
+                </if>
+                <if test="userProperty.upCount!=null">
+                    and up_count=#{userProperty.upCount}
+                </if>
+                <if test="userProperty.upCountDate!=null">
+                    and up_countDate=#{userProperty.upCountDate}
+                </if>
+                <if test="userProperty.upAccount!=null">
+                    and up_account=#{userProperty.upAccount}
+                </if>
+                <if test="userProperty.upAccountName!=null">
+                    and up_accountName=#{userProperty.upAccountName}
+                </if>
+                <if test="userProperty.upLock!=null">
+                    and up_lock=#{userProperty.upLock}
+                </if>
+                <if test="userProperty.uId!=null">
+                    and u_id=#{userProperty.uId}
+                </if>
+            </if>
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateUserProperty" useGeneratedKeys="true" keyProperty="id" parameterType="userProperty">
+        update zc_user_property
+        <set>
+            <if test="userProperty!=null">
+                <if test="userProperty.status!=null">
+                    , status=#{userProperty.status}
+                </if>
+                <if test="userProperty.upCount!=null">
+                    , up_count=#{userProperty.upCount}
+                </if>
+                <if test="userProperty.upCountDate!=null">
+                    , up_countDate=#{userProperty.upCountDate}
+                </if>
+                <if test="userProperty.upAccount!=null">
+                    , up_account=#{userProperty.upAccount}
+                </if>
+                <if test="userProperty.upAccountName!=null">
+                    ,up_accountName=#{userProperty.upAccountName}
+                </if>
+                <if test="userProperty.upLock!=null">
+                    ,up_lock=#{userProperty.upLock}
+                </if>
+                <if test="userProperty.uId!=null">
+                    , u_id=#{userProperty.uId}
+                </if>
+            </if>
+        </set>
+        <where>
+            <if test="userProperty!=null">
+                <if test="userProperty.id!=null">
+                    id=#{userProperty.id}
+                </if>
+                <if test="userProperty.uId!=null">
+                    and u_id=#{userProperty.uId}
+                </if>
+            </if>
+        </where>
+
+    </update>
+
+    <insert id="insertUserProperty" useGeneratedKeys="true" keyProperty="id" parameterType="userProperty">
+        insert into zc_user_property
+        <set>
+            <if test="userProperty!=null">
+                <if test="userProperty.status==null">
+                    , status=1
+                </if>
+                <if test="userProperty.status!=null">
+                    , status=#{userProperty.status}
+                </if>
+                <if test="userProperty.upCount!=null">
+                    , up_count=#{userProperty.upCount}
+                </if>
+                <if test="userProperty.upCountDate!=null">
+                    , up_countDate=#{userProperty.upCountDate}
+                </if>
+                <if test="userProperty.upAccount!=null">
+                    , up_account=#{userProperty.upAccount}
+                </if>
+                <if test="userProperty.upAccountName!=null">
+                    , up_accountName=#{userProperty.upAccountName}
+                </if>
+                <if test="userProperty.upLock!=null">
+                    ,  up_lock=#{userProperty.upLock}
+                </if>
+                <if test="userProperty.uId!=null">
+                    , u_id=#{userProperty.uId}
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteUserProperty">
+        delete
+        from zc_user_property
+        <where>
+            <if test="userProperty!=null">
+                <if test="userProperty.id!=null">
+                    id=#{userProperty.id}
+                </if>
+                <if test="userProperty.uId!=null">
+                    and u_id=#{userProperty.uId}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

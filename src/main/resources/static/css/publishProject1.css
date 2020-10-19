@@ -1,0 +1,68 @@
+/* 中间内容div */
+.centerCol {
+    background-color: rgba(255, 255, 255, 1);
+    border: 6px solid rgba(153, 153, 153, 0.2);
+}
+
+/* 项目大标题div */
+.projectTitle {
+    height: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+
+/* 具体每一项的一级标题 */
+.mdTitle1 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+/* 具体每一项的二级标题 */
+.mdTitle2 {
+    color: rgba(179, 179, 179, 1);
+}
+
+/* 上传图片父div */
+#phimgdiv {
+    margin-top: 2%;
+    margin-left: 10%;
+}
+
+/* 上传图片的回调图片 */
+#phimg {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 表单 每项 layui规定元素 */
+.layui-form-item {
+    margin-top: 4%;
+}
+
+/* 表单 每项 layui规定元素 */
+.layui-input-block {
+    margin-left: 0px;
+}
+
+/* 项目简介 */
+.pintroduce {
+    resize: none;
+    height: 74px;
+    min-height: 73px;
+
+}
+
+/* 时间选择控件 */
+.selectdate {
+    cursor: pointer;
+}
+
+/* 提交按钮 */
+.saveBtnDiv {
+    margin-left: 0px;
+}
+
+

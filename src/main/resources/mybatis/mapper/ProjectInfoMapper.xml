@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectInfoDao">
+    <!--查询项目-->
+    <select id="findProject" resultMap="jz.dao.commonDao.projectInfo">
+        select p.*, u.*,
+        p.id p_id,p.status p_status ,
+        u.id u_id,u.status u_status ,u.code u_code,
+        dit1.id d1_id,dit1.dic_id d1_dic_id,dit1.item_code d1_item_code,dit1.item_code d1_item_code,
+        dit1.item_name d1_item_name,dit1.item_info d1_item_info,dit1.status d1_status,
+        dit2.id d2_id,dit2.dic_id d2_dic_id,dit2.item_code d2_item_code,dit2.item_code d2_item_code,
+        dit2.item_name d2_item_name,dit2.item_info d2_item_info,dit2.status d2_status
+        from zc_project_info p,zc_user_info u
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 1) as dit1
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 2) as dit2
+        where dit1.item_code=p.p_type
+        and dit2.item_code= p.p_stage
+        and u.id = p.p_publishid
+
+        <if test="projectInfo!=null">
+            <if test="projectInfo.status==null or projectInfo.status==1">
+                and p.status= 1
+            </if>
+            <if test="projectInfo.status!=null and projectInfo.status!=1 and projectInfo.status!=-1">
+                and p.status= #{projectInfo.status}
+            </if>
+            <if test="projectInfo.pIsPublish==null or projectInfo.pIsPublish==1">
+                and p_ispublish= 1
+            </if>
+            <if test="projectInfo.pIsPublish!=null and projectInfo.pIsPublish!=1 and projectInfo.pIsPublish!=-1">
+                and p_ispublish= #{projectInfo.pIsPublish}
+            </if>
+
+            <if test="projectInfo.id!=null">
+                and p.id= #{projectInfo.id}
+            </if>
+            <if test="projectInfo.pName!=null and projectInfo.pName!=''">
+                and p.p_name like CONCAT('%',#{projectInfo.pName},'%')
+                or p.p_introduce like CONCAT('%',#{projectInfo.pName},'%')
+            </if>
+            <if test="projectInfo.pStage!=null">
+                <if test="projectInfo.pStage.itemCode!=null">
+                    and p.p_stage= #{projectInfo.pStage.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.pType!=null">
+                <if test="projectInfo.pType.itemCode!=null">
+                    and p.p_type= #{projectInfo.pType.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.userInfo!=null">
+                <if test="projectInfo.userInfo.id!=null">
+                    and p.p_publishid= #{projectInfo.userInfo.id}
+                </if>
+            </if>
+        </if>
+
+        <if test="Hot=='2'.toString()">
+            and p.p_stage= 2
+            order by p.p_nowmoney+0 desc
+        </if>
+
+        <if test="Hot=='1'.toString()">
+            order by p.p_publishdate desc
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+
+    </select>
+
+    <!-- 根据ids 查询项目-->
+    <select id="findProjectByIds" resultMap="jz.dao.commonDao.projectInfo">
+        select p.*, u.*,
+        p.id p_id,p.status p_status ,
+        u.id u_id,u.status u_status ,u.code u_code,
+        dit1.id d1_id,dit1.dic_id d1_dic_id,dit1.item_code d1_item_code,dit1.item_code d1_item_code,
+        dit1.item_name d1_item_name,dit1.item_info d1_item_info,dit1.status d1_status,
+        dit2.id d2_id,dit2.dic_id d2_dic_id,dit2.item_code d2_item_code,dit2.item_code d2_item_code,
+        dit2.item_name d2_item_name,dit2.item_info d2_item_info,dit2.status d2_status
+        from zc_project_info p,zc_user_info u
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 1) as dit1
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 2) as dit2
+        where dit1.item_code=p.p_type
+        and dit2.item_code= p.p_stage
+        and u.id = p.p_publishid
+        and p.id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <!--插入项目-->
+    <insert id="insertProject" parameterType="projectInfo" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO zc_project_info
+        SET
+        <if test="projectInfo!=null">
+            <if test="projectInfo.status==null or projectInfo.status!=1">
+                status= 0
+            </if>
+            <if test=" projectInfo.status==1">
+                status= 1
+            </if>
+            <if test="projectInfo.pName!=null">
+                , p_name= #{projectInfo.pName}
+            </if>
+            <if test="projectInfo.pHeadImg!=null">
+                , p_headimg= #{projectInfo.pHeadImg}
+            </if>
+            <if test="projectInfo.pIntroduce!=null">
+                , p_introduce= #{projectInfo.pIntroduce}
+            </if>
+            <if test="projectInfo.pStage!=null">
+                <if test="projectInfo.pStage.itemCode!=null">
+                    , p_stage= #{projectInfo.pStage.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.pType!=null">
+                <if test="projectInfo.pType.itemCode!=null">
+                    , p_type= #{projectInfo.pType.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.pContent!=null">
+                , p_content= #{projectInfo.pContent}
+            </if>
+            <if test="projectInfo.pNowMoney!=null">
+                , p_nowmoney= #{projectInfo.pNowMoney}
+            </if>
+            <if test="projectInfo.pTarMoney!=null">
+                , p_tarmoney= #{projectInfo.pTarMoney}
+            </if>
+            <if test="projectInfo.pPublishDate!=null">
+                , p_publishdate= #{projectInfo.pPublishDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="projectInfo.pStartDate!=null">
+                , p_startdate= #{projectInfo.pStartDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="projectInfo.pEndDate!=null">
+                ,p_enddate=#{projectInfo.pEndDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="projectInfo.pSupportNum!=null">
+                , p_supportnum= #{projectInfo.pSupportNum}
+            </if>
+            <if test="projectInfo.userInfo!=null">
+                <if test="projectInfo.userInfo.id!=null">
+                    , p_publishid= #{projectInfo.userInfo.id}
+                </if>
+            </if>
+            <if test="projectInfo.pIsPublish!=null">
+                , p_ispublish= #{projectInfo.pIsPublish}
+            </if>
+        </if>
+    </insert>
+
+    <!--更新项目-->
+    <update id="upDateProject" parameterType="projectInfo" useGeneratedKeys="true" keyProperty="id">
+        update zc_project_info
+        set id=#{projectInfo.id}
+        <if test="projectInfo!=null">
+            <if test=" projectInfo.status!=null">
+                ,status=#{projectInfo.status}
+            </if>
+            <if test="projectInfo.pName!=null">
+                , p_name= #{projectInfo.pName}
+            </if>
+            <if test="projectInfo.pHeadImg!=null">
+                , p_headimg= #{projectInfo.pHeadImg}
+            </if>
+            <if test="projectInfo.pIntroduce!=null">
+                , p_introduce= #{projectInfo.pIntroduce}
+            </if>
+
+            <if test="projectInfo.pStage!=null">
+                <if test="projectInfo.pStage.itemCode!=null">
+                    , p_stage= #{projectInfo.pStage.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.pType!=null">
+                <if test="projectInfo.pType.itemCode!=null">
+                    ,p_type= #{projectInfo.pType.itemCode}
+                </if>
+            </if>
+
+            <if test="projectInfo.pContent!=null">
+                , p_content= #{projectInfo.pContent}
+            </if>
+            <if test="projectInfo.pNowMoney!=null">
+                , p_nowmoney= #{projectInfo.pNowMoney}
+            </if>
+            <if test="projectInfo.pTarMoney!=null">
+                , p_tarmoney= #{projectInfo.pTarMoney}
+            </if>
+            <if test="projectInfo.pPublishDate!=null">
+                , p_publishdate= #{projectInfo.pPublishDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="projectInfo.pStartDate!=null">
+                , p_startdate= #{projectInfo.pStartDate,jdbcType=TIMESTAMP}
+            </if>
+            <if test="projectInfo.pEndDate!=null">
+                ,p_enddate=#{projectInfo.pEndDate,jdbcType=TIMESTAMP}
+            </if>
+
+            <if test="projectInfo.pSupportNum!=null">
+                , p_supportnum= #{projectInfo.pSupportNum}
+            </if>
+            <if test="projectInfo.userInfo!=null">
+                <if test="projectInfo.userInfo.id!=null">
+                    , p_publishid= #{projectInfo.userInfo.id}
+                </if>
+            </if>
+            <if test="projectInfo.pIsPublish!=null">
+                , p_ispublish= #{projectInfo.pIsPublish}
+            </if>
+        </if>
+        where id = #{projectInfo.id}
+    </update>
+
+    <!--删除项目-->
+    <delete id="deleteProject">
+        delete
+        from zc_project_info
+        <where>
+            <if test="projectInfo!=null">
+                <if test="projectInfo.id!=null">
+                    and id = #{projectInfo.id}
+                </if>
+                <if test="projectInfo.userInfo != null">
+                    <if test="projectInfo.userInfo.id != null">
+                        and p_publishid = #{projectInfo.userInfo.id}
+                    </if>
+                </if>
+            </if>
+        </where>
+    </delete>
+</mapper>
+

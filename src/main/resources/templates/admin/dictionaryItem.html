@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/admin/common/adminHead::head(~{::title},~{::link},~{::script})}">
+    <title>字典管理-后台管理-梦想众筹系统</title>
+    <!--额外添加的-->
+    <script type="text/javascript" th:src="@{/admin/js/dictionaryItem.js}"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+
+    <!--头部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-head}">头部导航栏</div>
+    <!--左边-->
+    <div th:replace="~{/admin/common/adminHead::left(ParActive='4',ChildActive='4.1')}">左边导航栏</div>
+    <!--底部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-foot}">底部</div>
+
+    <!--中间内容-->
+    <div class="layui-body c1">
+        <!--中间内容-->
+        <div class="layui-body c1">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;">
+                <!-- 字典管理-->
+                <div class="layui-card">
+                    <div class="layui-card-header">字典管理&nbsp||&nbsp (注意：请勿随意修改和删除，不当的操作将导致系统意想不到的错误~)</div>
+                    <div class="layui-card-body">
+                        <div class="layui-row " style="min-height: 613px;">
+                            <!--左边具体的字典-->
+                            <div class="layui-col-xs6 layui-col-md6 " style="text-align: center;">
+                                <!--添加用户-->
+                                <button class="layui-btn addDictionaryItem">添加字典</button>
+                                <!--具体字典类型表单-->
+                                <table class="dictionaryItemTable" lay-filter="dictionaryItemTable"
+                                       id="dictionaryItemTable"></table>
+                                <!--表单工具按钮-->
+                                <script type="text/html" id="rowBar1">
+                                    <a class="layui-btn layui-btn-xs" lay-event="update">修改</a>
+                                    <a class="layui-btn layui-btn-xs" lay-event="delete">删除</a>
+                                </script>
+                                <!-- 分页器 -->
+                                <div class="layui-row fenyediv">
+                                    <div id="fenye" class="layui-col-md12"></div>
+                                </div>
+                            </div>
+                            <!--右边字典类型-->
+                            <div class="layui-col-md-offset1 ayui-col-xs-offset1 layui-col-xs5 layui-col-md5 "
+                                 style="text-align: center;">
+                                <br> <br><br> <br>
+                                <h2 style="text-align: center">字典类型</h2>
+                                <table class="dictionaryTypeTable" lay-filter="dictionaryTypeTable"
+                                       id="dictionaryTypeTable">
+                                </table>
+                                <!-- 分页器 -->
+                                <div class="layui-row fenyediv">
+                                    <div id="fenye2" class="layui-col-md12"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--单字典具体详情表单弹框-->
+<div class="layui-col-md4 dictionaryItemDiv" style="width: 95%;display: none">
+    <br>
+    <h1 style="text-align: center">字典修改/添加</h1>
+    <form class="layui-form dictionaryItemForm" action="javascript:void(0)" id="dictionaryItemForm"
+          lay-filter="dictionaryItemForm">
+        <br>
+        <div class="layui-form-item">
+            <label class="layui-form-label">字典类型：</label>
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="">
+                <input type="text" name="dicId" lay-verify="required|not0"
+                       placeholder="字典类型" class="layui-input dicId rm1" value="" disabled>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">标识符：</label>
+            <div class="layui-input-block">
+                <input type="text" name="itemCode" lay-verify="required|not0"
+                       placeholder="标识符" class="layui-input rm1 itemCode" value="" disabled>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">字段名称：</label>
+            <div class="layui-input-block">
+                <input type="text" name="itemName" lay-verify="required"
+                       placeholder="字段名称" class="layui-input" value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">备注：</label>
+            <div class="layui-input-block">
+                <input type="text" name="itemInfo" lay-verify=""
+                       placeholder="备注" class="layui-input" value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="1" title="正常" checked>
+                <input type="radio" name="status" value="0" title="停用">
+            </div>
+        </div>
+        <div class="layui-form-item" style="text-align: right">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="dictionaryItemForm">修改/添加</button>
+                <a class="layui-btn closeBtn" href="javascript:void(0)">返回</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

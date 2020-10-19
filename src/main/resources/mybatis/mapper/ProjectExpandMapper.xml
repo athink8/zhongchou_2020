@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectExpandDao">
+    <select id="findProject" resultMap="jz.dao.commonDao.projectInfo">
+        select p.*, u.*,
+        p.id p_id,p.status p_status ,
+        u.id u_id,u.status u_status ,u.code u_code,
+        dit1.id d1_id,dit1.dic_id d1_dic_id,dit1.item_code d1_item_code,dit1.item_code d1_item_code,
+        dit1.item_name d1_item_name,dit1.item_info d1_item_info,dit1.status d1_status,
+        dit2.id d2_id,dit2.dic_id d2_dic_id,dit2.item_code d2_item_code,dit2.item_code d2_item_code,
+        dit2.item_name d2_item_name,dit2.item_info d2_item_info,dit2.status d2_status
+        from zc_project_info p,zc_user_info u
+        inner join zc_project_expand pe
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 1) as dit1
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 2) as dit2
+        where p.id = pe.p_id
+        and u.id=p.p_publishid
+        and dit1.item_code=p.p_type
+        and dit2.item_code= p.p_stage
+        <if test="projectExpand!=null">
+            <if test="projectExpand.applyDream!=null">
+                and pe.applyDream = #{projectExpand.applyDream}
+            </if>
+            <if test="projectExpand.pIsDream!=null">
+                and pe.p_isDream = #{projectExpand.pIsDream}
+            </if>
+            <if test="projectExpand.pIsCarousel!=null">
+                and pe.p_isCarousel = #{projectExpand.pIsCarousel}
+            </if>
+        </if>
+
+        <if test="projectInfo!=null">
+            <if test="projectInfo.status!=null ">
+                and p.status= #{projectInfo.status}
+            </if>
+            <if test="projectInfo.pIsPublish!=null">
+                and p_ispublish= #{projectInfo.pIsPublish}
+            </if>
+
+            <if test="projectInfo.id!=null">
+                and p.id= #{projectInfo.id}
+            </if>
+            <if test="projectInfo.pName!=null and projectInfo.pName!=''">
+                and p.p_name like CONCAT('%',#{projectInfo.pName},'%')
+                or p.p_introduce like CONCAT('%',#{projectInfo.pName},'%')
+            </if>
+            <if test="projectInfo.pStage!=null">
+                <if test="projectInfo.pStage.itemCode!=null">
+                    and p.p_stage= #{projectInfo.pStage.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.pType!=null">
+                <if test="projectInfo.pType.itemCode!=null">
+                    and p.p_type= #{projectInfo.pType.itemCode}
+                </if>
+            </if>
+            <if test="projectInfo.userInfo!=null">
+                <if test="projectInfo.userInfo.id!=null">
+                    and p.p_publishid= #{projectInfo.userInfo.id}
+                </if>
+            </if>
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <select id="findProjectExpand" resultType="projectExpand">
+        select *
+        from zc_project_expand where
+        <if test="projectExpand!=null">
+            <if test="projectExpand.status==null ">
+                status= 1
+            </if>
+            <if test="projectExpand.status!=null">
+                status= #{projectExpand.status}
+            </if>
+            <if test="projectExpand.id!=null">
+                and id= #{projectExpand.id}
+            </if>
+            <if test="projectExpand.pIsDream!=null">
+                and p_isDream= #{projectExpand.pIsDream}
+            </if>
+            <if test="projectExpand.applyDream!=null">
+                and applyDream= #{projectExpand.applyDream}
+            </if>
+            <if test="projectExpand.pIsCarousel!=null">
+                and p_isCarousel= #{projectExpand.pIsCarousel}
+            </if>
+            <if test="projectExpand.pId!=null">
+                and p_id= #{projectExpand.pId}
+            </if>
+        </if>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateProjectExpand" keyProperty="id" useGeneratedKeys="true">
+        update zc_project_expand
+        set
+        <if test="projectExpand!=null">
+            <if test="projectExpand.status==null ">
+                status= 1
+            </if>
+            <if test="projectExpand.status!=null">
+                status= #{projectExpand.status}
+            </if>
+            <if test="projectExpand.pIsDream!=null">
+                ,p_isDream=#{projectExpand.pIsDream}
+            </if>
+            <if test="projectExpand.applyDream!=null">
+                , applyDream=#{projectExpand.applyDream}
+            </if>
+            <if test="projectExpand.pIsCarousel!=null">
+                ,p_isCarousel=#{projectExpand.pIsCarousel}
+            </if>
+            <if test="projectExpand.pId!=null">
+                ,p_id=#{projectExpand.pId}
+            </if>
+        </if>
+        where id=#{projectExpand.id}
+    </update>
+
+    <insert id="insertProjectExpand" keyProperty="id" useGeneratedKeys="true">
+        insert into zc_project_expand
+        set
+        <if test="projectExpand!=null">
+            <if test="projectExpand.status==null ">
+                status= 1
+            </if>
+            <if test="projectExpand.status!=null">
+                status= #{projectExpand.status}
+            </if>
+            <if test="projectExpand.pIsDream!=null">
+                ,p_isDream=#{projectExpand.pIsDream}
+            </if>
+            <if test="projectExpand.applyDream!=null">
+                , applyDream=#{projectExpand.applyDream}
+            </if>
+            <if test="projectExpand.pIsCarousel!=null">
+                ,p_isCarousel=#{projectExpand.pIsCarousel}
+            </if>
+        </if>
+        ,p_id=#{projectExpand.pId}
+    </insert>
+
+    <delete id="deleteProjectExpand">
+        delete
+        from zc_project_expand
+        <where>
+            <if test="projectExpand!=null">
+                <if test="projectExpand.id!=null">
+                    and id = #{projectExpand.id}
+                </if>
+                <if test="projectExpand.pId!=null">
+                    and p_id = #{projectExpand.pId}
+                </if>
+            </if>
+        </where>
+    </delete>
+</mapper>
+

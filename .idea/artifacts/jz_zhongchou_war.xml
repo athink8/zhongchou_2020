@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jz_zhongchou:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jz_zhongchou</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-boot-starter-parent-2.2.5.RELEASE.war">
+      <element id="artifact" artifact-name="jz_zhongchou:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,18 @@
+
+.centerDiv {
+    background-color: white;
+    border: 6px solid rgba(153, 153, 153, 0.3);
+    border-radius: 1%;
+}
+
+/*订单标题*/
+.projectTitle {
+    margin-top: 1.2%;
+    text-align: center;
+}
+
+/*订单表单下所有div*/
+.orderForm > div {
+    margin-left: 2%;
+    margin-right: 5%;
+}

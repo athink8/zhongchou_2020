@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.RoleDao">
+    <select id="findRole" resultType="Role">
+        select * from zc_role
+        <where>
+            <if test="role!=null">
+                <if test="role.id!=null">
+                    and id=#{role.id}
+                </if>
+                <if test="role.rRoleName!=null">
+                    and r_roleName=#{role.rRoleName}
+                </if>
+                <if test="role.rOperate!=null">
+                    and r_operate=#{role.rOperate}
+                </if>
+            </if>
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateRole" useGeneratedKeys="true" keyProperty="id">
+        update zc_role set
+        <if test="role!=null">
+            <if test="role.id!=null">
+                id=#{role.id}
+            </if>
+            <if test="role.rRoleName!=null">
+                , r_roleName=#{role.rRoleName}
+            </if>
+            <if test="role.rOperate!=null">
+                , r_operate=#{role.rOperate}
+            </if>
+        </if>
+        where id=#{role.id}
+    </update>
+
+    <insert id="insertRole" useGeneratedKeys="true" keyProperty="id">
+        insert into zc_role set
+        <if test="role!=null">
+            <if test="role.rRoleName!=null">
+                r_roleName=#{role.rRoleName}
+            </if>
+            <if test="role.rOperate!=null">
+                , r_operate=#{role.rOperate}
+            </if>
+        </if>
+    </insert>
+
+    <delete id="deleteRole">
+        delete
+        from zc_role
+        <where>
+            <if test="role!=null">
+                <if test="role.id!=null">
+                    id=#{role.id}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

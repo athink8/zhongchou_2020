@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/admin/common/adminHead::head(~{::title},~{::link},~{::script})}">
+    <title>前台首页管理-后台管理-梦想众筹系统</title>
+    <!--额外添加的-->
+    <script type="text/javascript" th:src="@{/admin/js/foreIndex.js}"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+
+    <!--头部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-head}">头部导航栏</div>
+    <!--左边-->
+    <div th:replace="~{/admin/common/adminHead::left(ParActive='4',ChildActive='4.2')}">左边导航栏</div>
+    <!--底部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-foot}">底部</div>
+
+    <!--中间内容-->
+    <div class="layui-body c1">
+        <!--中间内容-->
+        <div class="layui-body c1">
+            <!-- 内容主体区域 -->
+            <div style="padding: 15px;">
+                <div class="layui-card">
+                    <div class="layui-card-header">首页幻灯片设置</div>
+                    <div class="layui-card-body" style="text-align: center">
+                        <h2>当前幻灯片设置的项目</h2>
+                        <!--已设置幻灯片的项目表单-->
+                        <table class="pcTable" lay-filter="pcTable" id="pcTable"></table>
+                        <!--表单工具按钮-->
+                        <script type="text/html" id="rowBar2">
+                            <a class="layui-btn layui-btn-xs" lay-event="isCarousel">取消此项目</a>
+                        </script>
+                        <!-- 分页器 -->
+                        <div class="layui-row fenyediv">
+                            <div id="fenye2" class="layui-col-md12"></div>
+                        </div>
+                        <br>
+
+                        <h2>可设置的幻灯片的项目</h2>
+                        <!--所有的项目表单-->
+                        <table class="pTable" lay-filter="pTable" id="pTable"></table>
+                        <!--表单工具按钮-->
+                        <script type="text/html" id="rowBar1">
+                            <a class="layui-btn layui-btn-xs" lay-event="isCarousel">设置此项目</a>
+                        </script>
+                        <!-- 分页器 -->
+                        <div class="layui-row fenyediv">
+                            <div id="fenye" class="layui-col-md12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--单用户具体详情表单弹框-->
+<div class="layui-col-md4 userInfoDiv" style="width: 95%;display: none">
+    <br>
+    <h1 style="text-align: center">用户信息修改</h1>
+    <form class="layui-form userInfoForm" action="javascript:void(0)" id="userInfoForm"
+          lay-filter="userInfoForm">
+        <br>
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名：</label>
+            <div class="layui-input-block">
+                <input type="hidden" name="id" value="">
+                <input type="text" name="uusername" lay-verify="required"
+                       placeholder="用户名" class="layui-input uusername" value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码：</label>
+            <div class="layui-input-block">
+                <input type="text" name="upassword" lay-verify="required"
+                       placeholder="密码" class="layui-input rm1 upassword" value="" disabled>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">手机号：</label>
+            <div class="layui-input-block">
+                <input type="text" name="uphone" lay-verify="not0|phone"
+                       maxlength="11" placeholder="手机号" class="layui-input " value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">邮箱：</label>
+            <div class="layui-input-block">
+                <input type="text" name="uemail" lay-verify="required|email"
+                       placeholder="邮箱" class="layui-input" value="">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">状态：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="status" value="0" title="停用">
+                <input type="radio" name="status" value="1" title="正常" checked>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">锁定：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="ulock" value="0" title="否">
+                <input type="radio" name="ulock" value="1" title="是" checked>
+            </div>
+        </div>
+        <div class="layui-form-item" style="text-align: right">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="userInfoForm">立即修改</button>
+                <a class="layui-btn closeBtn" href="javascript:void(0)">返回</a>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>

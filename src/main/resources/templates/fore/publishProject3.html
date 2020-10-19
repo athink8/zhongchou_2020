@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:replace="~{/fore/common/head::head(title='发现新生活',~{::link})}">-->
+<head th:replace="~{fore/common/head::head(~{::title},~{::link},~{::script})}">
+    <title>回报设置-梦想众筹-发现新生活</title>
+    <!--额外添加的-->
+    <link rel="stylesheet" th:href="@{/css/publishProject3.css}">
+    <script type="text/javascript" th:src="@{/js/publishProject3.js}"></script>
+</head>
+<body>
+<div class="layui-fluid">
+    <!--导航栏-->
+    <div th:replace="~{/fore/common/head::#myNav}">导航栏</div>
+    <br><br/><br/>
+
+    <!-- 项目内容 -->
+    <div class="layui-row">
+        <!-- 左边留白两格 -->
+        <div class="layui-col-md2 layui-col-xs2 blankCol1"></div>
+        <!-- 中间内容块 -->
+        <div class="layui-col-md8 layui-col-xs8 layui-col-space25 centerCol">
+            <!-- 编辑项目资料 -->
+            <!-- 发布项目标题 -->
+            <div class="layui-row ">
+                <div class=" layui-col-md12 projectTitle">
+                    编辑项目资料
+                </div>
+            </div>
+            <br><br><br>
+            <!-- 阶段标题 -->
+            <div th:replace="~{/fore/common/head::#stageTitle}">阶段标题</div>
+            <!--隐藏的当前阶段标识-->
+            <input type="hidden" class="nowStageTitle" value="3">
+            <br/><br/><br><br>
+
+            <!-- 设置回报内容 -->
+            <div class="layui-row ">
+                <!-- 标题内容 -->
+                <div class="layui-col-md10 layui-col-xs10">
+                    <!-- 标题 -->
+                    <div class=" mdTitle1">
+                        设置回报 *
+                    </div>
+                    <hr width="10%"/>
+                    <!-- 小标题 -->
+                    <div class=" mdTitle2">
+                        (设置多个回报或档次能提高项目的支持率。回报是项目的衍生品,与项目内容有关的回报更能吸引到大家的支持。)
+                    </div>
+                    <br/>
+                </div>
+                <!-- 回报表格 -->
+                <div class="layui-row">
+                    <!--动态表格内容-->
+                    <table class=" reportTable" lay-filter="reportTable" id="reportTable"></table>
+
+                    <!--表格里每列后的按钮-->
+                    <script type="text/html" id="rowBar">
+                        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+                        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+                    </script>
+                    <!--表格头按钮-->
+                    <script type="text/html" id="toolBar">
+                        <button type="button" class="layui-btn layui-btn-primary layui-btn-sm addReportBtn"
+                                lay-event="add">
+                            <i class="layui-icon">&#xe608;</i>添加回报
+                        </button>
+                    </script>
+                    <!-- 保存回报内容 -->
+                    <div class="reportContentInfo"></div>
+
+                    <!--<button type="button" class="layui-btn layui-btn-primary layui-btn-sm addReportBtn">-->
+                    <!--<i class="layui-icon">&#xe608;</i>添加回报-->
+                    <!--</button>-->
+                </div>
+
+                <!-- 添加回报表单 -->
+                <div class="layui-row">
+                    <form class="layui-form" action="javascript:void1()" id="reportForm" style="display: none;"
+                          lay-filter="reportForm">
+                        <br>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">回报类型</label>
+                            <div class="layui-input-block">
+                                <input type="hidden" class="id" value="" name="id"/>
+                                <input type="hidden" class="rid" value="" name="rid"/>
+                                <input type="hidden" class="pid" value="" name="pid"/>
+                                <select name="rtype" required lay-verify="required" class="rtype">
+                                    <option value=""></option>
+                                    <option value="1">虚拟物品-</option>
+                                    <option value="2">实体物品-</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">支持金额</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="rmoney" required lay-verify="required|number"
+                                       placeholder="请输入金额(元)" autocomplete="off"
+                                       class="layui-input needUpdate">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">回报内容</label>
+                            <div class="layui-input-block">
+								<textarea name="rcontent" placeholder="请输入内容,内容不应超过120字"
+                                          class="needUpdate layui-textarea" required
+                                          lay-verify="required" maxlength="120"
+                                          style="resize: none;"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">回报名额</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="rallAmount" required lay-verify="required|number|not0|onlyNum"
+                                       placeholder="回报数量(名)"
+                                       autocomplete="off" class="needUpdate layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">单笔数量</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="roneAmount" required lay-verify="required|number|not0|onlyNum"
+                                       placeholder="回报数量(名)"
+                                       autocomplete="off" class="needUpdate layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">回报时间</label>
+                            <div class="layui-input-block">
+                                <input type="text" name="rreportDate" required lay-verify="required|number|not0"
+                                       placeholder="距离项目结束后（）天"
+                                       autocomplete="off" class="needUpdate layui-input">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="reportForm">立即提交</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+                <br/><br/><br/><br/>
+                <!-- 提交按钮 -->
+                <div class="layui-row">
+                    <div class="layui-col-md-offset8 layui-col-md2 pinfodiv" style="height: 38px;line-height: 45px;">
+                        <p style="float: left;">查看 &nbsp;</p>
+                        <a href="javascript:void(0)" class="ppInfo">《发起者协议》</a>
+                    </div>
+                    <div class="layui-col-md2 ">
+                        <button type="button" class="layui-btn saveBtn" id="saveBtn">保存，进入下一步</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 左边留白两格 -->
+        <div class="layui-col-md2 layui-col-xs2 blankCol1"></div>
+    </div>
+
+    <!-- 结尾部 -->
+    <br/><br/><br/>
+    <div th:replace="~{/fore/common/head::#myFooter}">结尾部</div>
+</div>
+</body>
+</html>

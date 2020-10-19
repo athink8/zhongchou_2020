@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>项目详情-梦想众筹-发现新生活</title>
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+		<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+		<script src="../../static/lib/jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" media="all" href="../../static/lib/layui/css/layui.css" />
+		<script type="text/javascript" src="../../static/lib/layui/layui.js"></script>
+		<script type="text/javascript" src="../../static/js/projectDetail.js"></script>
+		<link rel="stylesheet" href="../../static/css/projectDetail.css" />
+	</head>
+	<body>
+		<div class="layui-fluid">
+			<!-- 导航栏 -->
+			<nav id="myNav">
+				<ul class="layui-nav " lay-filter="">
+					<li class="layui-nav-item " id="myNavLogo"><a href="index.html"><img src="../../static/img/smallico.png" class="layui-nav-img">梦想众筹</a></li>
+					<!-- <li class="layui-nav-item "><a href="#2">首页</a></li> -->
+					<li class="layui-nav-item"><a href="allproject.html">发现项目</a></li>
+					<li class="layui-nav-item"><a href="#3">梦想计划</a></li>
+					<li class="layui-nav-item"><a href="publishProject1.html">发布众筹</a></li>
+					<li class="layui-nav-item"><a href="#3">资讯动态</a></li>
+					<li class="layui-nav-item" id="myNavLogin">
+						<a href="#3">登录</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;">注册</a></dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item navUser" id="loginUser">
+						<a href="#3">jz</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;">退出登录</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</nav>
+
+			<br /><br /><br />
+			<!-- 项目内容 -->
+			<div class="layui-row">
+				<!-- 左边留白一格 -->
+				<div class="layui-col-md1 layui-col-xs1 blankCol1"></div>
+				<!-- 中间内容块 -->
+				<div class="layui-col-md10 layui-col-xs10 centerCol">
+					<!-- 项目信息 -->
+					<div class="layui-row layui-col-space25 pinfoDiv">
+						<!-- 项目名 -->
+						<div class=" layui-col-md7 projectTitleDiv ">
+							<div class="pname">
+								项目名:史诗之路
+							</div>
+						</div>
+						<!-- 用户名 -->
+						<div class=" layui-col-md2 UnameDiv ">
+							<div>
+								<a href="#uname" class="Uname">
+									<i class="layui-icon layui-icon-user" style="font-size: 20px;"></i>
+									athink
+								</a>
+							</div>
+							<div>发起这个项目</div>
+						</div>
+						<!-- 项目类型 -->
+						<div class=" layui-col-md2 ptypediv ">
+							<i class="layui-icon layui-icon-note"></i>
+							<span class="ptype">游戏</span>
+						</div>
+						<hr class="layui-col-md-offset7 layui-col-md4" style="padding: 0px" />
+						<!-- 左边 -->
+						<div class="layui-col-md7 ">
+							<!-- 左边图片 -->
+							<div class="layui-row pheadimgDiv">
+								<img src="../../static/img/1.jpeg" alt="1jpg" class="pheadimg" />
+							</div>
+						</div>
+						<!-- 右边文字信息 -->
+						<div class="layui-col-md4 pinfo">
+							<!-- 项目统计金额 -->
+							<div class="pamount">
+								<div class="pnowMoneyDiv">
+									<span>已售&nbsp;¥</span>
+									<span class="pnowMoney">1000</span>
+								</div>
+								<div class="ppercentDIV">
+									<div style="margin-top: 8px; width:100%">
+										<div class="layui-progress" lay-filter="ppercent2">
+											<div class="layui-progress-bar ppercent2" lay-percent="10%" style="width: 70%;"></div>
+										</div>
+									</div>
+									<i class="ppercent">10%</i>
+								</div>
+								<div class="ptarMoneyDiv">
+									<span>目标金额&nbsp;¥</span>
+									<span class="ptarMoney">10000</span>
+								</div>
+							</div>
+							<!-- 项目剩余时间-->
+							<div class="pendDayDiv">
+								<p class="pendDay">40天</p>
+								<p>&nbsp;剩余时间</p>
+							</div>
+							<!-- 项目支持数-->
+							<div class="psupportDiv">
+								<p class="psupport">100人</p>
+								<p>&nbsp;&nbsp;支持人数</p>
+							</div>
+							<!-- 支持按钮 -->
+							<div class="psupportBtnDiv">
+								<button type="button" class="layui-btn layui-btn-lg  layui-btn-radius psupportBtn" style="width: 70%;">
+									<i class="layui-icon layui-icon-rmb"></i>
+									立即购买支持
+								</button>
+								<a href="#收藏" style="margin-left: 2%;color: rgba(153, 153, 153, 0.9);"><i class="layui-icon layui-icon-rate-solid"></i>收藏</a>
+							</div>
+							<!-- 完成提示语 -->
+							<div class="Pmsg">
+								<span>此项目须在</span>
+								<span class="pendDate">2020-01-19 23:00</span>
+								<span>前达到</span>
+								<span class="ptarMoney"> ¥10,000 </span>
+								<span>的目标才可成功</span>
+								<i class="layui-icon layui-icon-face-smile"></i>
+							</div>
+							<br />
+							<hr style="padding: 0px" />
+						</div>
+						<br />
+						<div class="layui-row">
+							<!-- 项目简介 -->
+							<div class="pintroduce layui-col-md7">
+								<span>
+									啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+								</span>
+							</div>
+							<div class=" layui-col-md4 share">
+								<span>分享项目到&nbsp;&nbsp;</span>
+								<span>
+									<a href="#weixin"><i class="layui-icon layui-icon-login-wechat" style="font-size: 32px;color: rgba(153, 153, 153, 1);"></i></a>
+									<a href="#weibo"><i class="layui-icon layui-icon-login-qq" style="font-size: 32px;color: rgba(153, 153, 153, 1);"></i></a>
+									<a href="#qq"><i class="layui-icon layui-icon-login-weibo" style="font-size: 32px;color: rgba(153, 153, 153, 1);"></i></a>
+								</span>
+							</div>
+						</div>
+						<br />
+					</div>
+				</div>
+				<!-- 右边留白一格 -->
+				<div class="layui-col-md1 layui-col-xs1 blankCol1"></div>
+			</div>
+			<hr />
+
+			<!-- 第二页-->
+			<div class="layui-row" style="background-color: white;">
+				<!-- 左边留白一格 -->
+				<div class="layui-col-md1 layui-col-xs1 blankCol1"></div>
+				<!-- 中间内容块 -->
+				<div class="layui-col-md10 layui-col-xs10 centerCol">
+					<div class="layui-row">
+						<!-- 左边 -->
+						<div class="layui-col-md7">
+							<!-- 第二页菜单栏 -->
+							<div class="layui-tab layui-tab-brief" lay-filter="nav2">
+								<ul class=" layui-tab-title">
+									<li class="layui-this">项目详情</li>
+									<li>评论<span>100</span></li>
+									<li>支持者<span class="supportnum">20</span></li>
+								</ul>
+								<br />
+								<!-- 每一项内容 -->
+								<div class="layui-tab-content">
+									<!-- 项目详细内容项 -->
+									<div class="layui-tab-item layui-show">
+										<span class="mdTitle1">项目详情</span>
+										<hr class="layui-bg-blue" style="width: 13%">
+										<div class="pcontent">
+											<h1 style="text-align: center;color: #007DDB;">athink</h1>
+											<h2 style="text-align: center;color: rosybrown;">今天天气不错</h2>
+											<img src="../../static/img/10.jpg" />
+											<p style="line-height: 1.6;font-size: 18px;">大家觉得我怎么样呢！！是故宫出版社互动解谜游戏系列书籍《谜宫》第二部。拿到这本书，你就化身为一名清朝“侦探”，去侦破一件震惊朝野的科场大案。案卷卷汇、科举试卷、大清宝钞、咸丰元宝等20多件充满谜团的物件和线索道具，带你亲历一场古代探案之旅</p>
+											<p style="line-height: 1.6;font-size: 18px;">大家觉得我怎么样呢！！是故宫出版社互动解谜游戏系列书籍《谜宫》第二部。拿到这本书，你就化身为一名清朝“侦探”，去侦破一件震惊朝野的科场大案。案卷卷汇、科举试卷、大清宝钞、咸丰元宝等20多件充满谜团的物件和线索道具，带你亲历一场古代探案之旅</p>
+										</div>
+									</div>
+									<!-- 评论项 -->
+									<div class="layui-tab-item">
+										<span class="mdTitle1">评论数:100</span>
+										<hr class="layui-bg-blue" style="width: 17%">
+										<div class="comments">
+											@athink:这是一条评论呢！！
+										</div>
+									</div>
+									<!-- 支持者项 -->
+									<div class="layui-tab-item">
+										<span class="mdTitle1">支持者:20</span>
+										<hr class="layui-bg-blue" style="width: 14%">
+										<div class="supports">
+											<p>@athink:支持100元</p>
+											<p>@jz:支持1000元</p>
+											<p>@wang:支持200元</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- 右边 -->
+						<div class="layui-col-md5">
+							<!-- 风险提示 -->
+							<div>
+								<div class="tip1">
+									<h3>风险提示</h3>
+									<p>1. 您参与预售是支持将创意变为现实的过程，而不是直接的商品交易，因此存在一定风险。请您根据自己的判断选择、支持预售项目。
+									</p>
+									<p>2. 预售存在于发起人与支持者之间，本网网作为第三方平台，只提供网络空间、技术支持等服务。预售的回报产品和承诺由发起人提供和作出，本网不参与和担保预售项目的具体运作。
+									</p>
+									<p>3. 预售项目的回报发放及其他后续服务事项均由发起人负责。如果发生发起人无法发放回报、延迟发放回报、不提供回报后续服务等情形，您需要直接和发起人协商解决，本网网对此不承担任何责任。
+									</p>
+									<p>4.由于发起人能力和经验不足、市场风险、法律风险等各种因素，预售可能失败。对于在预售期限届满前失败的项目，您支持项目的款项会全部原路退还给您；对于预售成功的项目，支持者不能通过本网平台申请退款，若此时支持者因任何原因希望退款，需直接与发起者协商，若发起者同意退款，需直接向支持者退回款项，本网不会从可结算款项中扣除该部分退款金额。您对项目发起人的无偿支持以及额外打赏，一旦预售成功将不予退款，但预售失败的情况除外。
+									</p>
+								</div>
+								<a href="javascripe:void(0)" style="margin-left: 80%;" class="tip1More">查看更多
+									<i class="layui-icon layui-icon-triangle-d"></i>
+									<i class="layui-icon layui-icon-up" style="display: none;"></i>
+								</a>
+							</div>
+							<br />
+							<!-- 回报支持 -->
+							<div class="yourSupportDiv">
+								<!-- 无偿支持 -->
+								<div class="yourSupport">
+									<p class="mdTitle1">无偿支持</p>
+									<hr />
+									<p class="mdTitle2">选择此项，项目成功后发起人将不会给您发放回报。感谢您对这个项目的支持。</p>
+									<button type="button" class="layui-btn layui-btn-lg yourSupportBtn">去支持</button>
+								</div>
+								<br />
+								<!-- 动态添加的支持 -->
+								<div class="yourSupport">
+									<div class="mdTitle1">
+										<span class="money">¥298</span>
+									</div>
+									<div class="mdTitle2">
+										<span>限量</span>/
+										<span class="oneamount">每人限量5份</span>/
+										<span class="allamount">总限量100份</span>
+									</div>
+									<hr />
+									<div>这里是动态获取的回报内容哦</div>
+									<div class="mdTitle2">预计回报发放时间：
+										<span class="reportdate">2020-2-20</span>
+									</div>
+									<button type="button" class="layui-btn layui-btn-lg yourSupportBtn">去支持</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 右边留白一格 -->
+				<div class="layui-col-md1 layui-col-xs1 blankCol1"></div>
+			</div>
+
+
+			<hr style="width: 100%;height: 1px;" />
+			<br /><br />
+			<!-- 结尾部 -->
+			<footer class="myFooter">
+				<br /><br />
+				<span class="layui-breadcrumb" lay-separator=" ">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">意见反馈</a>
+					<a href="">版权许可</a>
+					<a href="">客服帮助</a>
+				</span>
+				<br /><br />
+				<div style="color: #9F9F9F;">CopyRight 梦想众筹 2019-2020 @Athink_</div>
+				<br /><br />
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectConnectionInfoDao">
+    <select id="findProjectConnectionInfo" resultType="ProjectConnectionInfo">
+        select *
+        from zc_project_connectioninfo
+        <where>
+            <if test="projectConnectionInfo!=null">
+                <if test="projectConnectionInfo.id!=null and projectConnectionInfo.id!=''">
+                    and id=#{projectConnectionInfo.id}
+                </if>
+                <if test="projectConnectionInfo.pId!=null and projectConnectionInfo.pId!=''">
+                    and p_id=#{projectConnectionInfo.pId}
+                </if>
+                <if test="projectConnectionInfo.pcName!=null and projectConnectionInfo.pcName!=''">
+                    and pc_name=#{projectConnectionInfo.pcName}
+                </if>
+                <if test="projectConnectionInfo.pcInfo!=null and projectConnectionInfo.pcInfo!=''">
+                    and pc_info=#{projectConnectionInfo.pcInfo}
+                </if>
+                <if test="projectConnectionInfo.pcPhone!=null and projectConnectionInfo.pcPhone!=''">
+                    and pc_phone=#{projectConnectionInfo.pcPhone}
+                </if>
+                <if test="projectConnectionInfo.pcCall!=null and projectConnectionInfo.pcCall!=''">
+                    and pc_call=#{projectConnectionInfo.pcCall}
+                </if>
+                <if test="projectConnectionInfo.pcAccount!=null and projectConnectionInfo.pcAccount!=''">
+                    and pc_account=#{projectConnectionInfo.pcAccount}
+                </if>
+                <if test="projectConnectionInfo.pcAccountName!=null and projectConnectionInfo.pcAccountName!=''">
+                    and pc_accountname=#{projectConnectionInfo.pcAccountName}
+                </if>
+            </if>
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <insert id="insertProjectConnectionInfo" keyProperty="id" useGeneratedKeys="true">
+        insert into zc_project_connectioninfo
+        set
+        <if test="projectConnectionInfo!=null">
+            <if test="projectConnectionInfo.pId!=null">
+                p_id=#{projectConnectionInfo.pId}
+            </if>
+            <if test="projectConnectionInfo.pcName!=null">
+                , pc_name=#{projectConnectionInfo.pcName}
+            </if>
+            <if test="projectConnectionInfo.pcInfo!=null">
+                ,pc_info=#{projectConnectionInfo.pcInfo}
+            </if>
+            <if test="projectConnectionInfo.pcPhone!=null">
+                , pc_phone=#{projectConnectionInfo.pcPhone}
+            </if>
+            <if test="projectConnectionInfo.pcCall!=null">
+                , pc_call=#{projectConnectionInfo.pcCall}
+            </if>
+            <if test="projectConnectionInfo.pcAccount!=null">
+                , pc_account=#{projectConnectionInfo.pcAccount}
+            </if>
+            <if test="projectConnectionInfo.pcAccountName!=null">
+                , pc_accountname=#{projectConnectionInfo.pcAccountName}
+            </if>
+        </if>
+    </insert>
+
+    <update id="updateProjectConnectionInfo" keyProperty="id" useGeneratedKeys="true">
+        update zc_project_connectioninfo
+        set
+        <if test="projectConnectionInfo!=null">
+            <if test="projectConnectionInfo.pId!=null">
+                p_id=#{projectConnectionInfo.pId}
+            </if>
+            <if test="projectConnectionInfo.pcName!=null">
+                , pc_name=#{projectConnectionInfo.pcName}
+            </if>
+            <if test="projectConnectionInfo.pcInfo!=null">
+                ,pc_info=#{projectConnectionInfo.pcInfo}
+            </if>
+            <if test="projectConnectionInfo.pcPhone!=null">
+                , pc_phone=#{projectConnectionInfo.pcPhone}
+            </if>
+            <if test="projectConnectionInfo.pcCall!=null">
+                , pc_call=#{projectConnectionInfo.pcCall}
+            </if>
+            <if test="projectConnectionInfo.pcAccount!=null">
+                , pc_account=#{projectConnectionInfo.pcAccount}
+            </if>
+            <if test="projectConnectionInfo.pcAccountName!=null">
+                , pc_accountname=#{projectConnectionInfo.pcAccountName}
+            </if>
+        </if>
+        where id=#{projectConnectionInfo.id}
+    </update>
+
+    <delete id="deleteProjectConnectionInfo">
+        delete
+        from zc_project_connectioninfo
+        <where>
+            <if test="projectConnectionInfo!=null">
+                <if test="projectConnectionInfo.id!=null">
+                    and id = #{projectConnectionInfo.id}
+                </if>
+                <if test="projectConnectionInfo.pId!=null">
+                    and p_id = #{projectConnectionInfo.pId}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

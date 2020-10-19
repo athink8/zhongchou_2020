@@ -1,0 +1,31 @@
+/*中间内容div*/
+.centerDiv {
+    height: 725px;
+    background-color: rgba(100, 174, 224, 1);
+    background-image: url("https://cdn.jsdelivr.net/gh/athink8/cdn/imgs/other/4min.jpg");
+    background-size: cover;
+}
+
+.layui-input-block {
+    margin-left: 0;
+}
+
+/*注册表单的父div*/
+.registDiv {
+    text-align: left;
+    background: whitesmoke;
+    height: 475px;
+    margin-top: 4%;
+}
+
+/*注册表单*/
+.registForm {
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+/*注册表单下所有div*/
+.registForm > div {
+    margin-bottom: 5%;
+}
+

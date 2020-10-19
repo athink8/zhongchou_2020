@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectOrderDao">
+    <select id="findProjectOrder" resultMap="jz.dao.commonDao.projectOrder">
+        select o.* ,dit1.*,
+        o.status o_status,
+        dit1.id d1_id,dit1.dic_id d1_dic_id,dit1.item_code d1_item_code,dit1.item_code d1_item_code,
+        dit1.item_name d1_item_name,dit1.item_info d1_item_info,dit1.status d1_status,
+        dit2.id d2_id,dit2.dic_id d2_dic_id,dit2.item_code d2_item_code,dit2.item_code d2_item_code,
+        dit2.item_name d2_item_name,dit2.item_info d2_item_info,dit2.status d2_status
+        from zc_project_order o
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 6) as dit1
+        inner join (select dit.* from zc_dictionary_item dit,zc_dictionary_type dic
+        where dit.status = 1 and dit.dic_id = dic.id and dic.id = 5) as dit2
+        where dit1.item_code=o.o_payType
+        and dit2.item_code= o.o_type
+        <if test="projectOrder!=null">
+            <if test="projectOrder.status!=null">
+                and o.status=#{projectOrder.status}
+            </if>
+            <if test="projectOrder.id!=null">
+                and o.id=#{projectOrder.id}
+            </if>
+            <if test="projectOrder.oId!=null">
+                and o.o_id=#{projectOrder.oId}
+            </if>
+            <if test="projectOrder.oTradeId!=null">
+                and o.o_tradeId=#{projectOrder.oTradeId}
+            </if>
+            <if test="projectOrder.oName!=null">
+                and o.o_name=#{projectOrder.oName}
+            </if>
+            <if test="projectOrder.oMoney!=null">
+                and o.o_money=#{projectOrder.oMoney}
+            </if>
+            <if test="projectOrder.oCreateTime!=null">
+                and o.o_createTime=#{projectOrder.oCreateTime}
+            </if>
+            <if test="projectOrder.oPayTime!=null">
+                and o.o_payTime=#{projectOrder.oPayTime}
+            </if>
+            <if test="projectOrder.oReceipt!=null">
+                and o.o_receipt=#{projectOrder.oReceipt}
+            </if>
+            <if test="projectOrder.oReceiveName!=null">
+                and o.o_receiveName=#{projectOrder.oReceiveName}
+            </if>
+            <if test="projectOrder.oAddress!=null">
+                and o.o_address=#{projectOrder.oAddress}
+            </if>
+            <if test="projectOrder.oPhone!=null">
+                and o.o_phone=#{projectOrder.oPhone}
+            </if>
+            <if test="projectOrder.oNum!=null">
+                and o.o_num=#{projectOrder.oNum}
+            </if>
+            <if test="projectOrder.rId!=null">
+                and o.r_id=#{projectOrder.rId}
+            </if>
+            <if test="projectOrder.pId!=null">
+                and o.p_id=#{projectOrder.pId}
+            </if>
+            <if test="projectOrder.uId!=null">
+                and o.u_id=#{projectOrder.uId}
+            </if>
+            <if test="projectOrder.oPayType!=null">
+                <if test="projectOrder.oPayType.itemCode!=null">
+                    and o.o_payType= #{projectOrder.oPayType.itemCode}
+                </if>
+            </if>
+            <if test="projectOrder.oType!=null">
+                <if test="projectOrder.oType.itemCode!=null">
+                    and o.o_type= #{projectOrder.oType.itemCode}
+                </if>
+            </if>
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateProjectOrder" useGeneratedKeys="true" keyProperty="id" parameterType="projectOrder">
+        update zc_project_order
+        <set>
+            <if test="projectOrder!=null">
+                <if test="projectOrder.status!=null">
+                    , status=#{projectOrder.status}
+                </if>
+                <if test="projectOrder.oId!=null">
+                    , o_id=#{projectOrder.oId}
+                </if>
+                <if test="projectOrder.oTradeId!=null">
+                    ,o_tradeId=#{projectOrder.oTradeId}
+                </if>
+                <if test="projectOrder.oName!=null">
+                    , o_name=#{projectOrder.oName}
+                </if>
+                <if test="projectOrder.oMoney!=null">
+                    , o_money=#{projectOrder.oMoney}
+                </if>
+                <if test="projectOrder.oCreateTime!=null">
+                    , o_createTime=#{projectOrder.oCreateTime}
+                </if>
+                <if test="projectOrder.oPayTime!=null">
+                    , o_payTime=#{projectOrder.oPayTime}
+                </if>
+                <if test="projectOrder.oReceipt!=null">
+                    , o_receipt=#{projectOrder.oReceipt}
+                </if>
+                <if test="projectOrder.oReceiveName!=null">
+                    , o_receiveName=#{projectOrder.oReceiveName}
+                </if>
+                <if test="projectOrder.oAddress!=null">
+                    , o_address=#{projectOrder.oAddress}
+                </if>
+                <if test="projectOrder.oPhone!=null">
+                    , o_phone=#{projectOrder.oPhone}
+                </if>
+                <if test="projectOrder.oNum!=null">
+                    , o_num=#{projectOrder.oNum}
+                </if>
+                <if test="projectOrder.rId!=null">
+                    , r_id=#{projectOrder.rId}
+                </if>
+                <if test="projectOrder.pId!=null">
+                    , p_id=#{projectOrder.pId}
+                </if>
+                <if test="projectOrder.uId!=null">
+                    , u_id=#{projectOrder.uId}
+                </if>
+                <if test="projectOrder.oPayType!=null">
+                    <if test="projectOrder.oPayType.itemCode!=null">
+                        ,o_payType= #{projectOrder.oPayType.itemCode}
+                    </if>
+                </if>
+                <if test="projectOrder.oType!=null">
+                    <if test="projectOrder.oType.itemCode!=null">
+                        ,o_type= #{projectOrder.oType.itemCode}
+                    </if>
+                </if>
+            </if>
+        </set>
+        WHERE id=#{projectOrder.id}
+    </update>
+
+    <insert id="insertProjectOrder" useGeneratedKeys="true" keyProperty="id" parameterType="projectOrder">
+        insert into zc_project_order
+        <set>
+            <if test="projectOrder!=null">
+                <if test="projectOrder.status!=null">
+                    , status=#{projectOrder.status}
+                </if>
+                <if test="projectOrder.oId!=null">
+                    , o_id=#{projectOrder.oId}
+                </if>
+                <if test="projectOrder.oTradeId!=null">
+                    ,o_tradeId=#{projectOrder.oTradeId}
+                </if>
+                <if test="projectOrder.oName!=null">
+                    , o_name=#{projectOrder.oName}
+                </if>
+                <if test="projectOrder.oMoney!=null">
+                    , o_money=#{projectOrder.oMoney}
+                </if>
+                <if test="projectOrder.oCreateTime!=null">
+                    , o_createTime=#{projectOrder.oCreateTime}
+                </if>
+                <if test="projectOrder.oPayTime!=null">
+                    , o_payTime=#{projectOrder.oPayTime}
+                </if>
+                <if test="projectOrder.oReceipt!=null">
+                    , o_receipt=#{projectOrder.oReceipt}
+                </if>
+                <if test="projectOrder.oReceiveName!=null">
+                    , o_receiveName=#{projectOrder.oReceiveName}
+                </if>
+                <if test="projectOrder.oAddress!=null">
+                    , o_address=#{projectOrder.oAddress}
+                </if>
+                <if test="projectOrder.oPhone!=null">
+                    , o_phone=#{projectOrder.oPhone}
+                </if>
+                <if test="projectOrder.oNum!=null">
+                    , o_num=#{projectOrder.oNum}
+                </if>
+                <if test="projectOrder.rId!=null">
+                    , r_id=#{projectOrder.rId}
+                </if>
+                <if test="projectOrder.pId!=null">
+                    , p_id=#{projectOrder.pId}
+                </if>
+                <if test="projectOrder.uId!=null">
+                    , u_id=#{projectOrder.uId}
+                </if>
+                <if test="projectOrder.oPayType!=null">
+                    <if test="projectOrder.oPayType.itemCode!=null">
+                        ,o_payType= #{projectOrder.oPayType.itemCode}
+                    </if>
+                </if>
+                <if test="projectOrder.oType!=null">
+                    <if test="projectOrder.oType.itemCode!=null">
+                        ,o_type= #{projectOrder.oType.itemCode}
+                    </if>
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteProjectOrder">
+        delete
+        from zc_project_order
+        <where>
+            <if test="projectOrder!=null">
+                <if test="projectOrder.id!=null">
+                    id=#{projectOrder.id}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>发现项目-梦想众筹-发现新生活</title>
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <script src="../../static/lib/jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" media="all" href="../../static/lib/layui/css/layui.css"/>
+    <script type="text/javascript" src="../../static/lib/layui/layui.js"></script>
+    <script type="text/javascript" src="../../static/js/allproject.js"></script>
+    <link rel="stylesheet" href="../../static/css/allproject.css"/>
+</head>
+<body>
+<div class="layui-fluid">
+    <!-- 导航栏 -->
+    <nav id="myNav">
+        <ul class="layui-nav " lay-filter="">
+            <li class="layui-nav-item " id="myNavLogo"><a href="index.html"><img src="../../static/img/smallico.png"
+                                                                                 class="layui-nav-img">梦想众筹</a></li>
+            <!-- <li class="layui-nav-item "><a href="#2">首页</a></li> -->
+            <li class="layui-nav-item"><a href="allproject.html">发现项目</a></li>
+            <li class="layui-nav-item"><a href="#3">梦想计划</a></li>
+            <li class="layui-nav-item"><a href="publishProject1.html">发布众筹</a></li>
+            <li class="layui-nav-item"><a href="#3">资讯动态</a></li>
+            <li class="layui-nav-item" id="myNavLogin">
+                <a href="#3">登录</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">注册</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item navUser" id="loginUser">
+                <a href="#3">jz</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">退出登录</a></dd>
+                </dl>
+            </li>
+        </ul>
+    </nav>
+    <br/><br/><br/>
+    <!-- 项目内容 -->
+    <div class="layui-row">
+        <!-- 左边留白一格 -->
+        <div class="layui-col-md1 layui-col-xs1 blankCol1"></div>
+        <!-- 中间内容块 -->
+        <div class="layui-col-md10 layui-col-xs10 centerCol">
+            <!-- 发现项目 -->
+            <!-- 标题快 -->
+            <div class="layui-row  layui-col-space5 ">
+                <!-- 左边大标题和数量 -->
+                <div class=" layui-col-md4 projectTitleDiv ">
+                    <span class="ptitle">发现项目</span>
+                    <span class="pnumber">20000000</span>
+                    <span>个项目</span>
+                </div>
+                <!--中间项目热度筛选 -->
+                <div class="layui-col-md-offset1 layui-col-md1 ">
+                    <form class="layui-form" action="#hotp">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <select name="phot" lay-verify="required">
+                                    <option value="0">全部</option>
+                                    <option value="1">最新项目</option>
+                                    <option value="2">热售项目</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--中间项目类型筛选 -->
+                <div class=" layui-col-md1 ">
+                    <form class="layui-form" action="#type">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <select name="ptype" lay-verify="required">
+                                    <option value="0">全部类型</option>
+                                    <option value="1">创意</option>
+                                    <option value="2">游戏</option>
+                                    <option value="3">动漫</option>
+                                    <option value="4">科技</option>
+                                    <option value="5">音乐</option>
+                                    <option value="6">其他</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--中间项目阶段筛选 -->
+                <div class="layui-col-md1 ">
+                    <form class="layui-form" action="#pstage">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <select name="phot" lay-verify="required">
+                                    <option value="0">全部状态</option>
+                                    <option value="1">预售</option>
+                                    <option value="2">在售</option>
+                                    <option value="3">已结束</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- 隐藏的保存项目选择的内容 -->
+                    <div style="height: 0px;width: 0px;">
+                        <input type="hidden" value="0" name=""/> <!-- 保存热度选择的类型数值-->
+                        <input type="hidden" value="0" name=""/> <!-- 保存类型选择的类型数值-->
+                        <input type="hidden" value="0" name=""/> <!-- 保存阶段选择的类型数值-->
+                    </div>
+                </div>
+                <!-- 右边的搜索框按钮 -->
+                <div class=" layui-col-md1 psearchBtnDiv layui-col-xs2 ">
+                    <i class="layui-icon layui-icon-search psearchBtn" style="font-size: 34px;cursor: pointer;"></i>
+                </div>
+                <!-- 右边的搜索框内容 -->
+                <div class="layui-col-md2 layui-col-xs10 ">
+                    <form class="layui-form" action="javascripe:return false">
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="text" name="psearchInfo" placeholder="请输入" autocomplete="off"
+                                       class="layui-input psearchInfo">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr/>
+            <!-- 项目内容块 -->
+            <div class=" layui-row layui-col-space20 projectDiv1">
+                <div class="layui-col-md3 layui-col-xs6 ">
+                    <div>
+                        <!-- 保存的项目id -->
+                        <input type="hidden" value="" name="" id=""/>
+                        <img src="../../static/img/13.jpg" alt="1.jpg"/>
+                        <!-- 项目文字信息 -->
+                        <div>
+                            <div class="Pinfo">
+                                <!-- 项目名 -->
+                                <div class="Pname">
+                                    最强的打人机打发十分大师傅顶顶顶顶顶顶顶顶顶顶
+                                </div>
+                                <!-- 发布者名字 -->
+                                <div class="Uname">
+                                    <i class="layui-icon layui-icon-username"></i>
+                                    athink
+                                </div>
+                                <!-- 项目统计金额 -->
+                                <div class="Pamount layui-row">
+                                    <span class="layui-col-md1 layui-col-xs1">¥</span>
+                                    <i class="Pnowmoney layui-col-md8 layui-col-xs8">1000000000</i>
+                                    <i class="Ppercent layui-col-md2 layui-col-xs2">300%</i>
+                                </div>
+                                <!-- 进度条 -->
+                                <div style="margin-top: 8px; width:95%">
+                                    <div class="layui-progress">
+                                        <div class="layui-progress-bar" lay-percent="70%" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <!-- 项目支持数-->
+                                <div class="Psupport">
+                                    100000支持者
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3 layui-col-xs6">
+                    <div>
+                        <img src="../../static/img/13.jpg"/>
+                        <!-- 项目文字信息 -->
+                        <div>
+                            <div class="Pinfo">
+                                <!-- 项目名 -->
+                                <div class="Pname">
+                                    最强的打人机打发十分大师傅顶顶顶顶顶顶顶顶顶顶
+                                </div>
+                                <!-- 发布者名字 -->
+                                <div class="Uname">
+                                    <i class="layui-icon layui-icon-username"></i>
+                                    athink
+                                </div>
+                                <!-- 项目统计金额 -->
+                                <div class="Pamount layui-row">
+                                    <span class="layui-col-md1 layui-col-xs1">¥</span>
+                                    <i class="Pnowmoney layui-col-md8 layui-col-xs8">1000000000</i>
+                                    <i class="Ppercent layui-col-md2 layui-col-xs2">300%</i>
+                                </div>
+                                <!-- 进度条 -->
+                                <div style="margin-top: 8px; width:95%">
+                                    <div class="layui-progress">
+                                        <div class="layui-progress-bar" lay-percent="70%" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <!-- 项目支持数-->
+                                <div class="Psupport">
+                                    100000支持者
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3 layui-col-xs6">
+                    <div>
+                        <img src="../../static/img/13.jpg"/>
+                        <!-- 项目文字信息 -->
+                        <div>
+                            <div class="Pinfo">
+                                <!-- 项目名 -->
+                                <div class="Pname">
+                                    最强的打人机打发十分大师傅顶顶顶顶顶顶顶顶顶顶
+                                </div>
+                                <!-- 发布者名字 -->
+                                <div class="Uname">
+                                    <i class="layui-icon layui-icon-username"></i>
+                                    athink
+                                </div>
+                                <!-- 项目统计金额 -->
+                                <div class="Pamount layui-row">
+                                    <span class="layui-col-md1 layui-col-xs1">¥</span>
+                                    <i class="Pnowmoney layui-col-md8 layui-col-xs8">1000000000</i>
+                                    <i class="Ppercent layui-col-md2 layui-col-xs2">300%</i>
+                                </div>
+                                <!-- 进度条 -->
+                                <div style="margin-top: 8px; width:95%">
+                                    <div class="layui-progress">
+                                        <div class="layui-progress-bar" lay-percent="70%" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <!-- 项目支持数-->
+                                <div class="Psupport">
+                                    100000支持者
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3 layui-col-xs6">
+                    <div>
+                        <img src="../../static/img/13.jpg"/>
+                        <!-- 项目文字信息 -->
+                        <div class="aProject">
+                            <div class="Pinfo">
+                                <!-- 项目名 -->
+                                <div class="Pname">
+                                    最强的打人机打发十分大师傅顶顶顶顶顶顶顶顶顶顶
+                                </div>
+                                <!-- 发布者名字 -->
+                                <div class="Uname">
+                                    <i class="layui-icon layui-icon-username"></i>
+                                    athink
+                                </div>
+                                <!-- 项目统计金额 -->
+                                <div class="Pamount layui-row">
+                                    <span class="layui-col-md1 layui-col-xs1">¥</span>
+                                    <i class="Pnowmoney layui-col-md8 layui-col-xs8">1000000000</i>
+                                    <i class="Ppercent layui-col-md2 layui-col-xs2">300%</i>
+                                </div>
+                                <!-- 进度条 -->
+                                <div style="margin-top: 8px; width:95%">
+                                    <div class="layui-progress">
+                                        <div class="layui-progress-bar" lay-percent="70%" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <!-- 项目支持数-->
+                                <div class="Psupport">
+                                    100000支持者
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-col-md3 layui-col-xs6">
+                    <div class="aProject">
+                        <img src="../../static/img/13.jpg"/>
+                        <!-- 项目文字信息 -->
+                        <div>
+                            <div class="Pinfo">
+                                <!-- 项目名 -->
+                                <div class="Pname">
+                                    最强的打人机打发十分大师傅顶顶顶顶顶顶顶顶顶顶
+                                </div>
+                                <!-- 发布者名字 -->
+                                <div class="Uname">
+                                    <i class="layui-icon layui-icon-username"></i>
+                                    athink
+                                </div>
+                                <!-- 项目统计金额 -->
+                                <div class="Pamount layui-row">
+                                    <span class="layui-col-md1 layui-col-xs1">¥</span>
+                                    <i class="Pnowmoney layui-col-md8 layui-col-xs8">1000000000</i>
+                                    <i class="Ppercent layui-col-md2 layui-col-xs2">300%</i>
+                                </div>
+                                <!-- 进度条 -->
+                                <div style="margin-top: 8px; width:95%">
+                                    <div class="layui-progress">
+                                        <div class="layui-progress-bar" lay-percent="70%" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <!-- 项目支持数-->
+                                <div class="Psupport">
+                                    100000支持者
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br/>
+        </div>
+        <!-- 右边留白一格 -->
+        <div class="layui-col-md1 layui-col-xs1 blankcol1"></div>
+    </div>
+
+    <!-- 分页器 -->
+    <div class="layui-row fenyediv">
+        <div id="fenye" class="layui-col-md12"></div>
+    </div>
+
+    <br/><br/><br/>
+    <!-- 结尾部 -->
+    <footer class="myFooter">
+        <br/><br/>
+        <span class="layui-breadcrumb" lay-separator=" ">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">意见反馈</a>
+					<a href="">版权许可</a>
+					<a href="">客服帮助</a>
+				</span>
+        <br/><br/>
+        <div style="color: #9F9F9F;">CopyRight 梦想众筹 2019-2020 @Athink_</div>
+        <br/><br/>
+    </footer>
+    <!--到底了  -->
+</div>
+</body>
+</html>

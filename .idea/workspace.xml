@@ -1,0 +1,2624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="57a69487-9231-406f-a2c1-932e30b5afb8" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/jz_zhongchou$JzZhongchouApplication.ic" NAME="JzZhongchouApplication Coverage Results" MODIFIED="1588167967532" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>jz.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="zhongchou: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="zhongchou: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="zc_role: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="zhongchou: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="zc_user_info: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="zhongchou@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="zhongchou: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="zc_user_role: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jz/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="464">
+              <caret line="576" column="56" selection-start-line="576" selection-start-column="42" selection-end-line="576" selection-end-column="56" />
+              <folding>
+                <element signature="docComment;class#UserController#0" />
+                <element signature="e#1266#1290#0" />
+                <element signature="method#login#0;class#UserController#0" />
+                <element signature="method#login#1;class#UserController#0" />
+                <element signature="e#2072#4014#1" />
+                <element signature="e#2159#4004#1" />
+                <element signature="e#2472#2687#1" />
+                <element signature="e#2591#2669#1" />
+                <element signature="e#2757#2823#1" />
+                <element signature="e#2867#2979#0" />
+                <element signature="e#3022#3093#0" />
+                <element signature="e#3130#3198#0" />
+                <element signature="e#3234#3303#0" />
+                <element signature="e#3408#3930#1" />
+                <element signature="e#3936#3990#1" />
+                <element signature="method#loginOut#0;class#UserController#0" />
+                <element signature="method#regist#0;class#UserController#0" />
+                <element signature="e#4718#5603#1" />
+                <element signature="e#4933#5096#1" />
+                <element signature="e#4997#5082#1" />
+                <element signature="e#5464#5592#1" />
+                <element signature="method#checkMail#0;class#UserController#0" />
+                <element signature="e#6075#7842#1" />
+                <element signature="e#6157#6333#1" />
+                <element signature="e#6459#7832#1" />
+                <element signature="e#6851#6927#1" />
+                <element signature="e#7216#7442#1" />
+                <element signature="e#7265#7424#1" />
+                <element signature="e#7472#7546#1" />
+                <element signature="method#info#0;class#UserController#0" />
+                <element signature="e#8219#8457#1" />
+                <element signature="method#info#1;class#UserController#0" />
+                <element signature="e#8867#9100#1" />
+                <element signature="method#info#2;class#UserController#0" />
+                <element signature="e#9355#11123#1" />
+                <element signature="e#9406#9594#1" />
+                <element signature="e#9661#9734#1" />
+                <element signature="e#9740#10879#1" />
+                <element signature="e#10018#10372#1" />
+                <element signature="e#10639#10865#1" />
+                <element signature="e#10688#10847#1" />
+                <element signature="e#10905#11113#1" />
+                <element signature="method#infoDel#0;class#UserController#0" />
+                <element signature="e#11405#11441#1" />
+                <element signature="e#11460#11629#1" />
+                <element signature="e#11543#11618#1" />
+                <element signature="method#idCard#0;class#UserController#0" />
+                <element signature="e#12041#12285#1" />
+                <element signature="method#idCard#1;class#UserController#0" />
+                <element signature="e#12557#13292#1" />
+                <element signature="e#12688#12809#1" />
+                <element signature="e#12815#13044#1" />
+                <element signature="e#13070#13282#1" />
+                <element signature="method#idCard#2;class#UserController#0" />
+                <element signature="e#14136#14542#0" />
+                <element signature="e#14181#14338#1" />
+                <element signature="e#14375#14532#1" />
+                <element signature="e#14565#14609#0" />
+                <element signature="e#14682#14809#1" />
+                <element signature="e#14815#14884#1" />
+                <element signature="e#14906#15107#1" />
+                <element signature="method#idCardDel#0;class#UserController#0" />
+                <element signature="e#15388#15424#1" />
+                <element signature="e#15466#15502#1" />
+                <element signature="e#15521#15693#1" />
+                <element signature="e#15608#15683#1" />
+                <element signature="method#property#0;class#UserController#0" />
+                <element signature="e#16121#16374#1" />
+                <element signature="method#property#1;class#UserController#0" />
+                <element signature="e#16655#17144#1" />
+                <element signature="e#16727#16808#1" />
+                <element signature="e#16814#16895#1" />
+                <element signature="e#16921#17134#1" />
+                <element signature="method#propertyDel#0;class#UserController#0" />
+                <element signature="e#17439#17475#1" />
+                <element signature="e#17494#17673#1" />
+                <element signature="e#17585#17662#1" />
+                <element signature="method#role#0;class#UserController#0" />
+                <element signature="e#18023#18251#1" />
+                <element signature="method#role#1;class#UserController#0" />
+                <element signature="e#18490#18930#1" />
+                <element signature="e#18554#18619#1" />
+                <element signature="e#18625#18690#1" />
+                <element signature="e#18716#18920#1" />
+                <element signature="method#roleDel#0;class#UserController#0" />
+                <element signature="e#19191#19227#1" />
+                <element signature="e#19246#19407#1" />
+                <element signature="e#19321#19396#1" />
+                <element signature="method#userRole#0;class#UserController#0" />
+                <element signature="e#19801#20043#1" />
+                <element signature="method#userRole#1;class#UserController#0" />
+                <element signature="e#20308#20775#1" />
+                <element signature="e#20376#20449#1" />
+                <element signature="e#20455#20528#1" />
+                <element signature="e#20554#20765#1" />
+                <element signature="method#userRoleDel#0;class#UserController#0" />
+                <element signature="e#21058#21094#1" />
+                <element signature="e#21113#21284#1" />
+                <element signature="e#21196#21273#1" />
+                <element signature="e#21513#21558#1" />
+                <element signature="e#21605#21650#1" />
+                <element signature="e#25650#25720#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/jz/util/AlipayConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="28" column="60" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>uName</find>
+      <find>product_code</find>
+      <find>nowUs</find>
+      <find>流水</find>
+      <find>share</find>
+      <find>uid</find>
+      <find>console.log(pheadImg)</find>
+      <find>cmcreateDate</find>
+      <find>CommentDao</find>
+      <find>pid</find>
+      <find>userProperty</find>
+      <find>code</find>
+      <find>window.location</find>
+      <find>toLogin</find>
+      <find>registBtn</find>
+      <find>loginBtn</find>
+      <find>up_lock</find>
+      <find>defer</find>
+      <find>ppTableBar</find>
+      <find>ppTableIns</find>
+      <find>open</find>
+      <find>Property</find>
+      <find>UserProperty</find>
+      <find>DictionaryItem</find>
+      <find>dit.</find>
+      <find>dit.id= #{dictionaryItem.id}</find>
+      <find>id= #{dictionaryItem.id}</find>
+      <find>Role</find>
+      <find>rRoleName</find>
+      <find>System.out</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;</replace>
+      <replace>regist</replace>
+      <replace>注册</replace>
+      <replace>urlData</replace>
+      <replace>projectExpand</replace>
+      <replace>pId</replace>
+      <replace>pIsDream</replace>
+      <replace>p_isDream</replace>
+      <replace>&quot;</replace>
+      <replace>ole</replace>
+      <replace>Role</replace>
+      <replace>rUrl</replace>
+      <replace>UserIdCard</replace>
+      <replace>dataSave</replace>
+      <replace>,</replace>
+      <replace>ProjectSupport</replace>
+      <replace>userIdCard</replace>
+      <replace>UserProperty</replace>
+      <replace>ProjectOrder</replace>
+      <replace>UserPropertyDao</replace>
+      <replace>·</replace>
+      <replace>orderForm</replace>
+      <replace>oName</replace>
+      <replace>oname</replace>
+      <replace>toRegistBtn</replace>
+      <replace>toLoginBtn</replace>
+      <replace>rowBar1</replace>
+      <replace>DictionaryItem</replace>
+      <replace>DictionaryType</replace>
+      <replace>UserRole</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\yuyan\java\spring\basic\jz_zhongchou\src\main\java\jz\entities\po</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/js/foreIndex.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/projectOrder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/js/projectOrder.js" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/controller/ProjectController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/dao/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/entities/po/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/dao/UserRoleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserIdCardMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/CommentMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/DictionaryItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ProjectConnectioninfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/ProjectSupportMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserPropertyMapper.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/18971d21-aade-43e9-836e-0c9dcc253b46/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/CommonMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserRoleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/userRole.html" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/entities/po/UserRole.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/shiro/ShiroConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/config/webConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/error/403.html" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/shiro/UserRealm.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/common/adminHead.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/login.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/common/adminHead.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/admin/js/userRole.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/allproject.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/dream.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/projectDetail.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/projectOrder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject1.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject2.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject3.1.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject3.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject4.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/publishProject5.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/regist.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/fore/userInfo.html" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/SpringBootStartApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/util/MyAlipayUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/jz/util/AlipayConfig.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JRebelWorkspace">
+    <option name="jrebelEnabledAutocompile" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="F:\yuyan\apache-maven-3.6.1\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jz_zhongchou" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="jz_zhongchou" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="MavenRunner">
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jz_zhongchou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jz_zhongchou" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="jz" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="extract.method.default.visibility" value="protected" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../other/他人源码/springboot-alipay/springboot-alipay" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\admin\js" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\templates\admin" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\mybatis\mapper" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\admin\common" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\java\jz\util" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jz.dao" />
+      <recent name="jz.entities.po" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\admin\css" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\lib" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\img" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\static\lib\jQuery" />
+      <recent name="E:\yuyan\java\spring\basic\jz_zhongchou\src\main\resources\templates" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;admin&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;admin1&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;jz&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081/login" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;jzzzzzz&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="0A87488CC8BCE56BCD7994B404109227" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;jzzzzzz&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="JSESSIONID" />
+                <option name="path" value="/" />
+                <option name="value" value="0A87488CC8BCE56BCD7994B404109227" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;admin&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;admin&quot;,&quot;upassword&quot;:&quot;123456&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uusername&quot;:&quot;admin&quot;,&quot;upassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Content-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uUsername&quot;:&quot;admin&quot;,&quot;uPassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Conten-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uUsername&quot;:&quot;admin&quot;,&quot;uPassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/toLogin" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Conten-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uUsername&quot;:&quot;admin&quot;,&quot;uPassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/tologin" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Conten-Type" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uUsername&quot;:&quot;admin&quot;,&quot;uPassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{&quot;uUsername&quot;:&quot;admin&quot;,&quot;uPassword&quot;:&quot;123455&quot;}" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8081" />
+          <option name="urlPath" value="/login" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="uUsername" />
+                <option name="value" value="admin" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="uPassword" />
+                <option name="value" value="123456" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 3 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="jz_zhongchou" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.JzZhongchouApplication">
+    <configuration name="rest-api#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api.http">
+      <method v="2" />
+    </configuration>
+    <configuration name="JzZhongchouApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jz_zhongchou" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jz" />
+      <option name="MAIN_CLASS_NAME" value="jz.JzZhongchouApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JzZhongchouApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jz_zhongchou" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="jz" />
+      <option name="MAIN_CLASS_NAME" value="jz.JzZhongchouApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="templates in jz_zhongchou" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="jz_zhongchou" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="templates.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="templates" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JzZhongchouApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="jz_zhongchou" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="jz.JzZhongchouApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.JzZhongchouApplication" />
+        <item itemvalue="JUnit.templates in jz_zhongchou" />
+        <item itemvalue="JUnit.JzZhongchouApplicationTests.contextLoads" />
+        <item itemvalue="HTTP Request.rest-api#1" />
+        <item itemvalue="JUnit.JzZhongchouApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57a69487-9231-406f-a2c1-932e30b5afb8" name="Default Changelist" comment="" />
+      <created>1585383006915</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585383006915</updated>
+      <workItem from="1585383011511" duration="880000" />
+      <workItem from="1585400014631" duration="19774000" />
+      <workItem from="1585446862228" duration="41589000" />
+      <workItem from="1585543034793" duration="16040000" />
+      <workItem from="1585574964112" duration="884000" />
+      <workItem from="1585632700880" duration="277000" />
+      <workItem from="1585642748422" duration="13939000" />
+      <workItem from="1585658136601" duration="25591000" />
+      <workItem from="1585720215864" duration="15695000" />
+      <workItem from="1585746020672" duration="688000" />
+      <workItem from="1585746752980" duration="1434000" />
+      <workItem from="1585748241559" duration="22138000" />
+      <workItem from="1585808126166" duration="45099000" />
+      <workItem from="1586103051930" duration="744000" />
+      <workItem from="1586156271419" duration="29922000" />
+      <workItem from="1586262565792" duration="2435000" />
+      <workItem from="1586265070501" duration="8026000" />
+      <workItem from="1586324151512" duration="3176000" />
+      <workItem from="1586337368820" duration="1898000" />
+      <workItem from="1586347433037" duration="4630000" />
+      <workItem from="1586352402094" duration="15693000" />
+      <workItem from="1586399376332" duration="38707000" />
+      <workItem from="1586497558033" duration="790000" />
+      <workItem from="1586498401346" duration="554000" />
+      <workItem from="1586499004992" duration="260000" />
+      <workItem from="1586499305968" duration="322000" />
+      <workItem from="1586499684177" duration="172000" />
+      <workItem from="1586499896468" duration="87000" />
+      <workItem from="1586500021258" duration="316000" />
+      <workItem from="1586500388681" duration="755000" />
+      <workItem from="1586501228048" duration="3643000" />
+      <workItem from="1586505506373" duration="4646000" />
+      <workItem from="1586520950822" duration="1442000" />
+      <workItem from="1586524767842" duration="19290000" />
+      <workItem from="1586574028112" duration="6588000" />
+      <workItem from="1586583498930" duration="9280000" />
+      <workItem from="1586593072027" duration="10673000" />
+      <workItem from="1587108287727" duration="27893000" />
+      <workItem from="1587194747829" duration="32083000" />
+      <workItem from="1587280981425" duration="68000" />
+      <workItem from="1587304170718" duration="1194000" />
+      <workItem from="1587390425285" duration="5335000" />
+      <workItem from="1587443961016" duration="42303000" />
+      <workItem from="1587542983430" duration="27233000" />
+      <workItem from="1587643908433" duration="21229000" />
+      <workItem from="1587703485360" duration="28640000" />
+      <workItem from="1587735897616" duration="39735000" />
+      <workItem from="1587819503559" duration="3887000" />
+      <workItem from="1587825521463" duration="1268000" />
+      <workItem from="1587826838820" duration="3453000" />
+      <workItem from="1587969340131" duration="13585000" />
+      <workItem from="1588060218433" duration="19694000" />
+      <workItem from="1588163791996" duration="18691000" />
+      <workItem from="1588226994139" duration="45223000" />
+      <workItem from="1588319718329" duration="34450000" />
+      <workItem from="1588416779836" duration="2034000" />
+      <workItem from="1588419583471" duration="2304000" />
+      <workItem from="1588430627188" duration="2291000" />
+      <workItem from="1588657199505" duration="1683000" />
+      <workItem from="1588665674672" duration="611000" />
+      <workItem from="1588666886522" duration="106000" />
+      <workItem from="1588667660795" duration="211000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.25 at 08h 18m 11s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.25 at 08h 25m 53s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.25 at 08h 26m 37s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.29 at 01h 42m 35s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.29 at 01h 44m 13s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.29 at 01h 45m 11s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.29 at 01h 46m 50s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JzZhongchouApplicationTests_contextLoads - 2020.04.29 at 01h 47m 28s.xml">
+      <configuration name="JzZhongchouApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="templates_in_jz_zhongchou - 2020.04.29 at 21h 29m 06s.xml">
+      <configuration name="templates in jz_zhongchou" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="templates_in_jz_zhongchou - 2020.04.29 at 21h 46m 14s.xml">
+      <configuration name="templates in jz_zhongchou" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="743281000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info id="Web" order="0" sideWeight="0.50073206" side_tool="true" weight="0.21447721" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4978038" visible="true" weight="0.24262735" />
+      <window_info id="Structure" order="2" sideWeight="0.5021962" side_tool="true" weight="0.21715818" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="JRebel" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Console" order="1" weight="0.41288432" />
+      <window_info anchor="bottom" id="Database Changes" order="2" sideWeight="0.49865952" weight="0.329429" />
+      <window_info anchor="bottom" id="Spring" order="3" sideWeight="0.49932975" weight="0.329429" />
+      <window_info anchor="bottom" id="Problems" order="4" weight="0.329429" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39970717" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" sideWeight="0.49865952" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="TODO" order="14" show_stripe_button="false" weight="0.329429" />
+      <window_info anchor="bottom" id="REST Client" order="15" sideWeight="0.49932975" weight="0.5285505" />
+      <window_info anchor="bottom" id="Run" order="16" sideWeight="0.4966488" weight="0.39531478" />
+      <window_info anchor="bottom" id="Terminal" order="17" sideWeight="0.50067025" side_tool="true" weight="0.5285505" />
+      <window_info anchor="bottom" id="Event Log" order="18" sideWeight="0.39075068" side_tool="true" weight="0.41288432" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.2124665" side_tool="true" weight="0.329429" />
+      <window_info anchor="bottom" id="JRebel Executor" order="20" sideWeight="0.60924935" weight="0.5036603" />
+      <window_info anchor="right" id="Bean Validation" order="0" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="6" weight="0.16957104" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="RestServices" order="8" weight="0.39678285" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297587" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Web" order="0" sideWeight="0.50073206" side_tool="true" weight="0.21447721" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4978038" visible="true" weight="0.23592493" />
+      <window_info id="Structure" order="2" sideWeight="0.5021962" side_tool="true" weight="0.21715818" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="JRebel" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="SQL Generator" order="0" weight="0.329429" />
+      <window_info anchor="bottom" id="Database Console" order="1" weight="0.41288432" />
+      <window_info anchor="bottom" id="Database Changes" order="2" sideWeight="0.49865952" weight="0.329429" />
+      <window_info anchor="bottom" id="Spring" order="3" sideWeight="0.49932975" weight="0.329429" />
+      <window_info anchor="bottom" id="Problems" order="4" weight="0.329429" />
+      <window_info anchor="bottom" id="Message" order="5" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.329429" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.329429" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39970717" />
+      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" show_stripe_button="false" sideWeight="0.49865952" weight="0.329429" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="bottom" id="TODO" order="14" show_stripe_button="false" weight="0.329429" />
+      <window_info anchor="bottom" id="REST Client" order="15" sideWeight="0.49932975" weight="0.5285505" />
+      <window_info anchor="bottom" id="Run" order="16" sideWeight="0.4966488" weight="0.39531478" />
+      <window_info anchor="bottom" id="Terminal" order="17" sideWeight="0.50067025" side_tool="true" weight="0.5285505" />
+      <window_info anchor="bottom" id="Event Log" order="18" sideWeight="0.39075068" side_tool="true" weight="0.41288432" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.2124665" side_tool="true" weight="0.329429" />
+      <window_info anchor="bottom" id="JRebel Executor" order="20" sideWeight="0.60924935" weight="0.5036603" />
+      <window_info anchor="right" id="Bean Validation" order="0" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Maven" order="5" weight="0.3297587" />
+      <window_info anchor="right" id="Database" order="6" weight="0.16957104" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="RestServices" order="8" weight="0.39678285" />
+      <window_info anchor="right" id="JRebel Setup Guide" order="9" weight="0.3297587" />
+      <window_info anchor="right" id="Coverage" order="10" side_tool="true" weight="0.3297587" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserIdCardMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#where#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#8;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/RoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserPropertyMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#if#0;n#where#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#7;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://18971d21-aade-43e9-836e-0c9dcc253b46/schema/zhongchou/table/zc_user_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/18971d21-aade-43e9-836e-0c9dcc253b46/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userAll.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/dream.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/projectDreamAll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-528" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/projectAll.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="93" column="25" lean-forward="true" selection-start-line="85" selection-start-column="15" selection-end-line="93" selection-end-column="25" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#1;n#div#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#2;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#textarea#0;n#div#0;n#div#3;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#4;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#5;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#5;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#6;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#6;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#7;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/js/userAll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="14" selection-start-column="14" selection-end-column="14" />
+          <folding>
+            <element signature="e#14#5160#0" />
+            <element signature="e#70#5157#0" />
+            <element signature="e#260#276#0" />
+            <element signature="e#328#2330#0" />
+            <element signature="e#578#789#0" />
+            <element signature="e#640#773#0" />
+            <element signature="e#820#1072#0" />
+            <element signature="e#882#1056#0" />
+            <element signature="e#1105#1357#0" />
+            <element signature="e#1167#1341#0" />
+            <element signature="e#1390#2320#0" />
+            <element signature="e#1489#2304#0" />
+            <element signature="e#1730#2224#0" />
+            <element signature="e#1781#2200#0" />
+            <element signature="e#2263#2286#0" />
+            <element signature="e#2405#2656#0" />
+            <element signature="e#2419#2438#0" />
+            <element signature="e#2668#2678#0" />
+            <element signature="e#2726#4111#0" />
+            <element signature="e#2756#2801#0" />
+            <element signature="e#2824#2871#0" />
+            <element signature="e#2893#2937#0" />
+            <element signature="e#2957#4100#0" />
+            <element signature="e#3167#3953#0" />
+            <element signature="e#3251#3811#0" />
+            <element signature="e#3297#3553#0" />
+            <element signature="e#3352#3527#0" />
+            <element signature="e#3559#3789#0" />
+            <element signature="e#3817#3935#0" />
+            <element signature="e#3990#4086#0" />
+            <element signature="e#4121#4133#0" />
+            <element signature="e#4180#4945#0" />
+            <element signature="e#4205#4933#0" />
+            <element signature="e#4422#4865#0" />
+            <element signature="e#4548#4845#0" />
+            <element signature="e#4900#4919#0" />
+            <element signature="e#4956#4973#0" />
+            <element signature="e#5025#5149#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/js/projectAll.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/CommonMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="106" column="25" selection-start-line="106" selection-start-column="25" selection-end-line="106" selection-end-column="25" />
+          <folding>
+            <element signature="n#collection#1;n#resultMap#0;n#mapper#0;n#!!top" />
+            <element signature="n#collection#2;n#resultMap#0;n#mapper#0;n#!!top" />
+            <element signature="n#resultMap#2;n#mapper#0;n#!!top" />
+            <element signature="n#collection#0;n#resultMap#2;n#mapper#0;n#!!top" />
+            <element signature="n#collection#1;n#resultMap#2;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserRoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="n#if#1;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#1;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#1;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#1;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/DictionaryItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="39" column="13" lean-forward="true" selection-start-line="34" selection-end-line="39" selection-end-column="13" />
+          <folding>
+            <element signature="n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#6;n#if#0;n#select#0;n#mapper#0;n#!!top" />
+            <element signature="n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#set#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#update#0;n#mapper#0;n#!!top" />
+            <element signature="n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#1;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#2;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#3;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#4;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#5;n#if#0;n#set#0;n#insert#0;n#mapper#0;n#!!top" />
+            <element signature="n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+            <element signature="n#if#0;n#if#0;n#where#0;n#delete#0;n#mapper#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/js/dictionaryItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="114" column="10" lean-forward="true" selection-start-line="91" selection-start-column="8" selection-end-line="114" selection-end-column="10" />
+          <folding>
+            <element signature="e#3519#4329#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/entities/po/UserRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/config/webConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="48" column="57" lean-forward="true" selection-start-line="48" selection-start-column="57" selection-end-line="48" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/403.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding>
+            <element signature="e#165#171#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/shiro/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="46" column="24" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/shiro/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/common/adminHead.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+          <folding>
+            <element signature="e#77#386#0" />
+            <element signature="e#158#170#0" />
+            <element signature="e#218#259#0" />
+            <element signature="e#270#284#0" />
+            <element signature="e#334#379#0" />
+            <element signature="e#395#420#0" />
+            <element signature="e#395#406#0" />
+            <element signature="n#!!block;n#getProjectCount#0" />
+            <element signature="e#505#1035#0" />
+            <element signature="e#620#840#0" />
+            <element signature="e#665#830#0" />
+            <element signature="e#716#816#0" />
+            <element signature="e#738#748#0" />
+            <element signature="e#872#1029#0" />
+            <element signature="e#1060#1071#0" />
+            <element signature="n#!!block;n#getUserCount#0" />
+            <element signature="e#1167#1659#0" />
+            <element signature="e#1282#1464#0" />
+            <element signature="e#1327#1454#0" />
+            <element signature="e#1369#1440#0" />
+            <element signature="e#1496#1653#0" />
+            <element signature="e#1684#1704#0" />
+            <element signature="n#!!block;n#fenYeInit#0" />
+            <element signature="e#1855#6071#0" />
+            <element signature="e#1856#1869#0" />
+            <element signature="e#1970#6063#0" />
+            <element signature="e#2329#6053#0" />
+            <element signature="e#2347#2386#0" />
+            <element signature="e#2437#2491#0" />
+            <element signature="e#2508#2520#0" />
+            <element signature="e#2679#2685#0" />
+            <element signature="e#2757#6038#0" />
+            <element signature="e#3012#5143#0" />
+            <element signature="e#3013#5142#0" />
+            <element signature="e#3550#3859#0" />
+            <element signature="e#3886#4193#0" />
+            <element signature="e#4220#4430#0" />
+            <element signature="e#4821#5027#0" />
+            <element signature="e#5191#5553#0" />
+            <element signature="e#5280#5530#0" />
+            <element signature="e#5586#5656#0" />
+            <element signature="e#5689#5845#0" />
+            <element signature="e#5877#6020#0" />
+            <element signature="e#6077#6097#0" />
+            <element signature="n#!!block;n#fenYeInit2#0" />
+            <element signature="e#6246#9282#0" />
+            <element signature="e#6247#6260#0" />
+            <element signature="e#6361#9274#0" />
+            <element signature="e#6720#9264#0" />
+            <element signature="e#6738#6777#0" />
+            <element signature="e#6828#6882#0" />
+            <element signature="e#6899#6911#0" />
+            <element signature="e#7070#7076#0" />
+            <element signature="e#7148#9249#0" />
+            <element signature="e#7403#8386#0" />
+            <element signature="e#7404#8385#0" />
+            <element signature="e#7829#8035#0" />
+            <element signature="e#8062#8270#0" />
+            <element signature="e#8434#8762#0" />
+            <element signature="e#8483#8739#0" />
+            <element signature="e#8795#8867#0" />
+            <element signature="e#8900#9056#0" />
+            <element signature="e#9088#9231#0" />
+            <element signature="e#9288#9310#0" />
+            <element signature="n#!!block;n#fenYeInit3#0" />
+            <element signature="e#9462#12342#0" />
+            <element signature="e#9463#9476#0" />
+            <element signature="e#9577#12334#0" />
+            <element signature="e#9936#12324#0" />
+            <element signature="e#9954#9993#0" />
+            <element signature="e#10044#10098#0" />
+            <element signature="e#10115#10127#0" />
+            <element signature="e#10286#10292#0" />
+            <element signature="e#10364#12309#0" />
+            <element signature="e#10619#11407#0" />
+            <element signature="e#10620#11406#0" />
+            <element signature="e#11088#11291#0" />
+            <element signature="e#11455#11824#0" />
+            <element signature="e#11544#11801#0" />
+            <element signature="e#11857#11927#0" />
+            <element signature="e#11960#12116#0" />
+            <element signature="e#12148#12291#0" />
+            <element signature="e#12348#12370#0" />
+            <element signature="n#!!block;n#fenYeInit4#0" />
+            <element signature="e#12519#15177#0" />
+            <element signature="e#12520#12533#0" />
+            <element signature="e#12634#15169#0" />
+            <element signature="e#12994#15159#0" />
+            <element signature="e#13012#13051#0" />
+            <element signature="e#13102#13156#0" />
+            <element signature="e#13173#13185#0" />
+            <element signature="e#13344#13350#0" />
+            <element signature="e#13422#15144#0" />
+            <element signature="e#13677#14269#0" />
+            <element signature="e#13678#14268#0" />
+            <element signature="e#14043#14246#0" />
+            <element signature="e#14317#14657#0" />
+            <element signature="e#14366#14634#0" />
+            <element signature="e#14690#14762#0" />
+            <element signature="e#14795#14951#0" />
+            <element signature="e#14983#15126#0" />
+            <element signature="e#15183#15205#0" />
+            <element signature="n#!!block;n#fenYeInit5#0" />
+            <element signature="e#15357#19574#0" />
+            <element signature="e#15358#15371#0" />
+            <element signature="e#15472#19566#0" />
+            <element signature="e#15832#19556#0" />
+            <element signature="e#15850#15889#0" />
+            <element signature="e#15940#15994#0" />
+            <element signature="e#16011#16023#0" />
+            <element signature="e#16182#16188#0" />
+            <element signature="e#16260#19541#0" />
+            <element signature="e#16515#18646#0" />
+            <element signature="e#16516#18645#0" />
+            <element signature="e#17053#17362#0" />
+            <element signature="e#17389#17696#0" />
+            <element signature="e#17723#17933#0" />
+            <element signature="e#18324#18530#0" />
+            <element signature="e#18694#19056#0" />
+            <element signature="e#18783#19033#0" />
+            <element signature="e#19089#19159#0" />
+            <element signature="e#19192#19348#0" />
+            <element signature="e#19380#19523#0" />
+            <element signature="e#19580#19600#0" />
+            <element signature="n#!!block;n#fenYeInit6#0" />
+            <element signature="e#19749#23946#0" />
+            <element signature="e#19750#19763#0" />
+            <element signature="e#19864#23938#0" />
+            <element signature="e#20223#23928#0" />
+            <element signature="e#20241#20280#0" />
+            <element signature="e#20331#20385#0" />
+            <element signature="e#20402#20414#0" />
+            <element signature="e#20573#20579#0" />
+            <element signature="e#20651#23913#0" />
+            <element signature="e#20906#23041#0" />
+            <element signature="e#20907#23040#0" />
+            <element signature="e#22041#22357#0" />
+            <element signature="e#22384#22694#0" />
+            <element signature="e#22721#22925#0" />
+            <element signature="e#23089#23426#0" />
+            <element signature="e#23138#23403#0" />
+            <element signature="e#23459#23531#0" />
+            <element signature="e#23564#23720#0" />
+            <element signature="e#23752#23895#0" />
+            <element signature="e#23952#23974#0" />
+            <element signature="n#!!block;n#fenYeInit7#0" />
+            <element signature="e#24123#26520#0" />
+            <element signature="e#24124#24137#0" />
+            <element signature="e#24238#26512#0" />
+            <element signature="e#24597#26502#0" />
+            <element signature="e#24615#24654#0" />
+            <element signature="e#24705#24759#0" />
+            <element signature="e#24776#24788#0" />
+            <element signature="e#24947#24953#0" />
+            <element signature="e#25025#26487#0" />
+            <element signature="e#25280#25623#0" />
+            <element signature="e#25281#25622#0" />
+            <element signature="e#25671#26000#0" />
+            <element signature="e#25720#25977#0" />
+            <element signature="e#26033#26105#0" />
+            <element signature="e#26138#26294#0" />
+            <element signature="e#26326#26469#0" />
+            <element signature="e#26526#26548#0" />
+            <element signature="n#!!block;n#fenYeInit8#0" />
+            <element signature="e#26697#30462#0" />
+            <element signature="e#26698#26711#0" />
+            <element signature="e#26812#30454#0" />
+            <element signature="e#27172#30444#0" />
+            <element signature="e#27190#27229#0" />
+            <element signature="e#27280#27334#0" />
+            <element signature="e#27351#27363#0" />
+            <element signature="e#27522#27528#0" />
+            <element signature="e#27600#30429#0" />
+            <element signature="e#27855#29561#0" />
+            <element signature="e#27856#29560#0" />
+            <element signature="e#28974#29198#0" />
+            <element signature="e#29225#29449#0" />
+            <element signature="e#29609#29942#0" />
+            <element signature="e#29658#29919#0" />
+            <element signature="e#29975#30047#0" />
+            <element signature="e#30080#30236#0" />
+            <element signature="e#30268#30411#0" />
+            <element signature="e#30468#30483#0" />
+            <element signature="n#!!block;n#addSelect#0" />
+            <element signature="e#30585#31233#0" />
+            <element signature="e#30724#30769#0" />
+            <element signature="e#30857#31225#0" />
+            <element signature="e#30982#31038#0" />
+            <element signature="e#31044#31091#0" />
+            <element signature="e#31256#31427#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/common/head.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="121" column="6" lean-forward="true" selection-start-line="98" selection-start-column="3" selection-end-line="121" selection-end-column="6" />
+          <folding>
+            <element signature="e#100#1747#0" />
+            <element signature="e#111#120#0" />
+            <element signature="e#259#357#0" />
+            <element signature="e#273#282#0" />
+            <element signature="e#439#800#0" />
+            <element signature="e#642#790#0" />
+            <element signature="e#716#776#0" />
+            <element signature="e#872#1739#0" />
+            <element signature="e#915#1059#0" />
+            <element signature="e#986#1045#0" />
+            <element signature="e#1079#1163#0" />
+            <element signature="e#1183#1267#0" />
+            <element signature="e#1312#1453#0" />
+            <element signature="e#1380#1439#0" />
+            <element signature="e#1499#1657#0" />
+            <element signature="e#1580#1643#0" />
+            <element signature="e#1754#1771#0" />
+            <element signature="e#1889#1987#0" />
+            <element signature="e#2013#2029#0" />
+            <element signature="e#2134#2150#0" />
+            <element signature="e#2205#2521#0" />
+            <element signature="e#2313#2451#0" />
+            <element signature="e#2457#2515#0" />
+            <element signature="e#2529#2541#0" />
+            <element signature="e#2598#2688#0" />
+            <element signature="e#2696#2716#0" />
+            <element signature="e#2744#3097#0" />
+            <element signature="e#2780#3091#0" />
+            <element signature="e#2851#3081#0" />
+            <element signature="e#3103#3128#0" />
+            <element signature="e#3172#3853#0" />
+            <element signature="e#3189#3846#0" />
+            <element signature="e#3317#3752#0" />
+            <element signature="e#3359#3639#0" />
+            <element signature="e#3418#3530#0" />
+            <element signature="e#3544#3619#0" />
+            <element signature="e#3645#3738#0" />
+            <element signature="e#3785#3836#0" />
+            <element signature="e#3860#3870#0" />
+            <element signature="e#3916#4047#0" />
+            <element signature="e#4055#4065#0" />
+            <element signature="e#4112#4246#0" />
+            <element signature="e#4254#4265#0" />
+            <element signature="e#4307#5052#0" />
+            <element signature="e#4740#5044#0" />
+            <element signature="e#4939#4954#0" />
+            <element signature="e#4985#5034#0" />
+            <element signature="e#5060#5071#0" />
+            <element signature="e#5117#5889#0" />
+            <element signature="e#5577#5881#0" />
+            <element signature="e#5776#5791#0" />
+            <element signature="e#5822#5871#0" />
+            <element signature="e#5897#5931#0" />
+            <element signature="e#5933#5947#0" />
+            <element signature="n#!!block;n#getProjects#0" />
+            <element signature="e#6063#11149#0" />
+            <element signature="e#6194#10954#0" />
+            <element signature="e#6276#10944#0" />
+            <element signature="e#6294#6304#0" />
+            <element signature="e#6487#6495#0" />
+            <element signature="e#6632#6696#0" />
+            <element signature="e#6740#10474#0" />
+            <element signature="e#10515#10922#0" />
+            <element signature="e#10618#10627#0" />
+            <element signature="e#10986#11143#0" />
+            <element signature="e#11174#11189#0" />
+            <element signature="n#!!block;n#getRequestData#0" />
+            <element signature="e#11349#11464#0" />
+            <element signature="e#11419#11458#0" />
+            <element signature="e#11485#11500#0" />
+            <element signature="e#11602#12250#0" />
+            <element signature="e#11741#11786#0" />
+            <element signature="e#11874#12242#0" />
+            <element signature="e#11999#12055#0" />
+            <element signature="e#12061#12108#0" />
+            <element signature="e#12273#12444#0" />
+            <element signature="e#12449#12464#0" />
+            <element signature="n#!!block;n#addSelect2#0" />
+            <element signature="e#12573#13063#0" />
+            <element signature="e#12652#12697#0" />
+            <element signature="e#12791#13055#0" />
+            <element signature="e#12818#12864#0" />
+            <element signature="e#13086#13257#0" />
+            <element signature="e#13262#13276#0" />
+            <element signature="n#!!block;n#base64encode#0" />
+            <element signature="e#13431#13445#0" />
+            <element signature="n#!!block;n#base64decode#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/common/adminHead.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="84" column="54" selection-start-line="84" selection-start-column="50" selection-end-line="84" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/common/adminHead.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/admin/js/userRole.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
+          <folding>
+            <element signature="e#320#333#0" />
+            <element signature="e#836#981#0" />
+            <element signature="e#1048#1676#0" />
+            <element signature="e#1077#1660#0" />
+            <element signature="e#1314#1580#0" />
+            <element signature="e#1361#1556#0" />
+            <element signature="e#1619#1642#0" />
+            <element signature="e#1698#1711#0" />
+            <element signature="e#2143#2872#0" />
+            <element signature="e#2853#3104#0" />
+            <element signature="e#2867#2886#0" />
+            <element signature="e#3193#3212#0" />
+            <element signature="e#3545#3555#0" />
+            <element signature="e#3603#4714#0" />
+            <element signature="e#3633#3678#0" />
+            <element signature="e#3701#3748#0" />
+            <element signature="e#3770#3814#0" />
+            <element signature="e#3834#4703#0" />
+            <element signature="e#4044#4556#0" />
+            <element signature="e#4128#4414#0" />
+            <element signature="e#4420#4538#0" />
+            <element signature="e#4593#4689#0" />
+            <element signature="e#4724#4736#0" />
+            <element signature="e#4793#5603#0" />
+            <element signature="e#4818#5591#0" />
+            <element signature="e#5041#5523#0" />
+            <element signature="e#5247#5503#0" />
+            <element signature="e#5558#5577#0" />
+            <element signature="e#5614#5624#0" />
+            <element signature="e#5671#6193#0" />
+            <element signature="e#5696#6181#0" />
+            <element signature="e#5911#6113#0" />
+            <element signature="e#5954#6093#0" />
+            <element signature="e#6148#6167#0" />
+            <element signature="e#6260#6277#0" />
+            <element signature="e#6390#6771#0" />
+            <element signature="e#6525#6578#0" />
+            <element signature="e#6634#6759#0" />
+            <element signature="e#6794#6985#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/userRole.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="71" column="33" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="33" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#table#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#1;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/common/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="51" lean-forward="true" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#body#0;n#html#0;n#!!top" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#a#0;n#li#0;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#2162#2260#0" />
+            <element signature="n#li#5;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#dl#0;n#li#6;n#ul#0;n#nav#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#span#0;n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/allproject.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#select#0;n#div#0;n#div#0;n#form#0;n#div#3;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#0;n#form#0;n#div#6;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#7;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#i#0;n#div#7;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/dream.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/projectDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/projectOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject3.1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/publishProject5.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/fore/userInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#1;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#4;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#5;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#input#0;n#div#0;n#div#0;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#button#0;n#div#0;n#div#2;n#form#0;n#div#2;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#6;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#0;n#div#6;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/JzZhongchouApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#311#312#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/util/MyAlipayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#aliPay#0;class#MyAlipayUtils#0" />
+            <element signature="e#1085#1226#1" />
+            <element signature="e#1247#1497#1" />
+            <element signature="method#aliPayReturn#0;class#MyAlipayUtils#0" />
+            <element signature="e#2641#3146#1" />
+            <element signature="e#2843#2987#1" />
+            <element signature="e#3375#3972#1" />
+            <element signature="e#3978#4036#1" />
+            <element signature="method#alipayNotifyNotice#0;class#MyAlipayUtils#0" />
+            <element signature="e#4498#5007#1" />
+            <element signature="e#4700#4844#1" />
+            <element signature="e#5500#6947#1" />
+            <element signature="e#6114#6136#0" />
+            <element signature="e#6446#6468#0" />
+            <element signature="e#6953#7017#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/SpringBootStartApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="53" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/controller/ProjectController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1861">
+          <caret line="651" column="27" lean-forward="true" selection-start-line="651" selection-start-column="27" selection-end-line="651" selection-end-column="27" />
+          <folding>
+            <element signature="docComment;class#ProjectController#0" />
+            <element signature="e#971#986#0" />
+            <element signature="method#dictionaryItem#0;class#ProjectController#0" />
+            <element signature="method#dictionaryItem#1;class#ProjectController#0" />
+            <element signature="e#2183#2313#1" />
+            <element signature="e#2319#2449#1" />
+            <element signature="e#2498#2675#1" />
+            <element signature="method#dictionaryItemDel#0;class#ProjectController#0" />
+            <element signature="e#2998#3034#1" />
+            <element signature="e#3053#3236#1" />
+            <element signature="e#3151#3226#1" />
+            <element signature="method#dictionaryType#0;class#ProjectController#0" />
+            <element signature="method#dictionaryType#1;class#ProjectController#0" />
+            <element signature="e#4264#4394#1" />
+            <element signature="e#4400#4530#1" />
+            <element signature="e#4579#4758#1" />
+            <element signature="method#dictionaryTypeDel#0;class#ProjectController#0" />
+            <element signature="e#5084#5120#1" />
+            <element signature="e#5139#5324#1" />
+            <element signature="e#5237#5314#1" />
+            <element signature="method#expand#0;class#ProjectController#0" />
+            <element signature="e#5730#6166#1" />
+            <element signature="e#6013#6065#1" />
+            <element signature="method#expandInfo#0;class#ProjectController#0" />
+            <element signature="e#6672#6870#1" />
+            <element signature="method#expandInfo#1;class#ProjectController#0" />
+            <element signature="e#7339#7467#1" />
+            <element signature="e#7509#7637#1" />
+            <element signature="e#7686#7859#1" />
+            <element signature="method#expandInfoDel#0;class#ProjectController#0" />
+            <element signature="e#8208#8244#1" />
+            <element signature="e#8263#8445#1" />
+            <element signature="e#8359#8434#1" />
+            <element signature="method#info#0;class#ProjectController#0" />
+            <element signature="e#8943#8987#1" />
+            <element signature="method#info#1;class#ProjectController#0" />
+            <element signature="e#9481#9711#1" />
+            <element signature="method#pContent#0;class#ProjectController#0" />
+            <element signature="e#9929#10579#1" />
+            <element signature="e#10060#10569#1" />
+            <element signature="e#10301#10555#1" />
+            <element signature="method#info#2;class#ProjectController#0" />
+            <element signature="e#10897#11283#1" />
+            <element signature="e#10935#11273#1" />
+            <element signature="e#10957#11094#0" />
+            <element signature="e#11117#11259#0" />
+            <element signature="e#11535#11896#1" />
+            <element signature="e#11906#11912#0" />
+            <element signature="e#12019#12954#1" />
+            <element signature="e#12037#12850#0" />
+            <element signature="e#12388#12460#1" />
+            <element signature="e#12871#12944#0" />
+            <element signature="e#12998#13206#1" />
+            <element signature="method#reports#0;class#ProjectController#0" />
+            <element signature="e#13581#13894#1" />
+            <element signature="e#13698#13884#1" />
+            <element signature="method#infoDel#0;class#ProjectController#0" />
+            <element signature="e#14185#14221#1" />
+            <element signature="e#14269#14384#1" />
+            <element signature="e#14330#14374#1" />
+            <element signature="e#14403#14577#1" />
+            <element signature="e#14491#14566#1" />
+            <element signature="method#reports#1;class#ProjectController#0" />
+            <element signature="method#reports#2;class#ProjectController#0" />
+            <element signature="e#15536#15664#1" />
+            <element signature="e#15740#15868#1" />
+            <element signature="e#15917#16106#1" />
+            <element signature="method#reportsDel#0;class#ProjectController#0" />
+            <element signature="e#16410#16446#1" />
+            <element signature="e#16525#16561#1" />
+            <element signature="e#16606#16642#1" />
+            <element signature="e#16661#16843#1" />
+            <element signature="e#16757#16832#1" />
+            <element signature="method#connectionInfo#0;class#ProjectController#0" />
+            <element signature="method#connectionInfo#1;class#ProjectController#0" />
+            <element signature="e#17946#18090#1" />
+            <element signature="e#18096#18240#1" />
+            <element signature="e#18289#18470#1" />
+            <element signature="method#connectionInfoDel#0;class#ProjectController#0" />
+            <element signature="e#18802#18838#1" />
+            <element signature="e#18891#18927#1" />
+            <element signature="e#18946#19143#1" />
+            <element signature="e#19058#19133#1" />
+            <element signature="method#support#0;class#ProjectController#0" />
+            <element signature="method#supportP#0;class#ProjectController#0" />
+            <element signature="e#20155#20941#1" />
+            <element signature="e#20206#20493#1" />
+            <element signature="e#20418#20479#1" />
+            <element signature="e#20586#20678#1" />
+            <element signature="method#support#1;class#ProjectController#0" />
+            <element signature="e#21288#21910#1" />
+            <element signature="e#21363#21505#1" />
+            <element signature="e#21511#21653#1" />
+            <element signature="e#21710#21900#1" />
+            <element signature="method#supportDel#0;class#ProjectController#0" />
+            <element signature="e#22201#22305#1" />
+            <element signature="e#22251#22295#1" />
+            <element signature="e#22324#22507#1" />
+            <element signature="e#22422#22497#1" />
+            <element signature="method#order#0;class#ProjectController#0" />
+            <element signature="e#23838#23923#1" />
+            <element signature="e#24084#24124#0" />
+            <element signature="e#24324#25262#1" />
+            <element signature="e#24606#25244#1" />
+            <element signature="e#25070#25134#1" />
+            <element signature="e#25140#25222#1" />
+            <element signature="e#25268#25316#1" />
+            <element signature="e#25507#27644#1" />
+            <element signature="e#25631#27040#1" />
+            <element signature="e#25657#25664#0" />
+            <element signature="e#25951#27018#1" />
+            <element signature="e#26279#26871#1" />
+            <element signature="e#26670#26841#1" />
+            <element signature="e#26877#26992#1" />
+            <element signature="e#27097#27626#1" />
+            <element signature="e#27213#27332#0" />
+            <element signature="e#27362#27438#0" />
+            <element signature="e#27703#28455#1" />
+            <element signature="e#27842#28375#1" />
+            <element signature="e#28079#28146#1" />
+            <element signature="e#28289#28353#1" />
+            <element signature="e#28381#28437#1" />
+            <element signature="e#28512#29737#1" />
+            <element signature="e#29663#29719#1" />
+            <element signature="e#29800#30790#1" />
+            <element signature="e#30152#30772#1" />
+            <element signature="e#30686#30750#1" />
+            <element signature="e#30857#31172#1" />
+            <element signature="e#31194#31998#1" />
+            <element signature="e#31346#31493#1" />
+            <element signature="e#31401#31475#1" />
+            <element signature="e#32056#32259#1" />
+            <element signature="method#orderDel#0;class#ProjectController#0" />
+            <element signature="e#32561#32663#1" />
+            <element signature="e#32609#32653#1" />
+            <element signature="e#32682#32861#1" />
+            <element signature="e#32776#32851#1" />
+            <element signature="method#pPublish#0;class#ProjectController#0" />
+            <element signature="e#33219#33253#0" />
+            <element signature="e#33345#34291#1" />
+            <element signature="e#33419#34281#1" />
+            <element signature="e#33953#34155#1" />
+            <element signature="e#34186#34267#1" />
+            <element signature="method#aliPay#0;class#ProjectController#0" />
+            <element signature="e#34475#34547#0" />
+            <element signature="e#34577#34621#0" />
+            <element signature="method#aliPayReturn#0;class#ProjectController#0" />
+            <element signature="e#34855#34940#0" />
+            <element signature="e#35001#35045#0" />
+            <element signature="e#35099#36275#1" />
+            <element signature="e#35321#36265#1" />
+            <element signature="e#35470#35520#0" />
+            <element signature="e#35747#36251#1" />
+            <element signature="e#35803#36233#1" />
+            <element signature="method#alipayNotifyNotice#0;class#ProjectController#0" />
+            <element signature="e#36556#36647#0" />
+            <element signature="e#36708#36752#0" />
+            <element signature="method#aliPayReturn2#0;class#ProjectController#0" />
+            <element signature="e#37064#37149#0" />
+            <element signature="e#37210#37254#0" />
+            <element signature="e#37308#39096#1" />
+            <element signature="e#37496#37573#1" />
+            <element signature="e#38387#38769#1" />
+            <element signature="method#support#2;class#ProjectController#0" />
+            <element signature="method#comment#0;class#ProjectController#0" />
+            <element signature="e#40040#40101#1" />
+            <element signature="e#40235#41063#1" />
+            <element signature="e#40423#40551#1" />
+            <element signature="e#40557#40813#1" />
+            <element signature="e#40870#41053#1" />
+            <element signature="method#commentDel#0;class#ProjectController#0" />
+            <element signature="e#41333#41430#1" />
+            <element signature="e#41376#41420#1" />
+            <element signature="e#41449#41620#1" />
+            <element signature="e#41533#41610#1" />
+            <element signature="method#upDateProjectInfo#0;class#ProjectController#0" />
+            <element signature="e#41884#42004#1" />
+            <element signature="e#42010#42130#1" />
+            <element signature="e#42179#42234#1" />
+            <element signature="method#imgBase64#0;class#ProjectController#0" />
+            <element signature="e#42402#42753#1" />
+            <element signature="e#42507#42743#1" />
+            <element signature="e#42618#42729#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="464">
+          <caret line="576" column="56" selection-start-line="576" selection-start-column="42" selection-end-line="576" selection-end-column="56" />
+          <folding>
+            <element signature="docComment;class#UserController#0" />
+            <element signature="e#1266#1290#0" />
+            <element signature="method#login#0;class#UserController#0" />
+            <element signature="method#login#1;class#UserController#0" />
+            <element signature="e#2072#4014#1" />
+            <element signature="e#2159#4004#1" />
+            <element signature="e#2472#2687#1" />
+            <element signature="e#2591#2669#1" />
+            <element signature="e#2757#2823#1" />
+            <element signature="e#2867#2979#0" />
+            <element signature="e#3022#3093#0" />
+            <element signature="e#3130#3198#0" />
+            <element signature="e#3234#3303#0" />
+            <element signature="e#3408#3930#1" />
+            <element signature="e#3936#3990#1" />
+            <element signature="method#loginOut#0;class#UserController#0" />
+            <element signature="method#regist#0;class#UserController#0" />
+            <element signature="e#4718#5603#1" />
+            <element signature="e#4933#5096#1" />
+            <element signature="e#4997#5082#1" />
+            <element signature="e#5464#5592#1" />
+            <element signature="method#checkMail#0;class#UserController#0" />
+            <element signature="e#6075#7842#1" />
+            <element signature="e#6157#6333#1" />
+            <element signature="e#6459#7832#1" />
+            <element signature="e#6851#6927#1" />
+            <element signature="e#7216#7442#1" />
+            <element signature="e#7265#7424#1" />
+            <element signature="e#7472#7546#1" />
+            <element signature="method#info#0;class#UserController#0" />
+            <element signature="e#8219#8457#1" />
+            <element signature="method#info#1;class#UserController#0" />
+            <element signature="e#8867#9100#1" />
+            <element signature="method#info#2;class#UserController#0" />
+            <element signature="e#9355#11123#1" />
+            <element signature="e#9406#9594#1" />
+            <element signature="e#9661#9734#1" />
+            <element signature="e#9740#10879#1" />
+            <element signature="e#10018#10372#1" />
+            <element signature="e#10639#10865#1" />
+            <element signature="e#10688#10847#1" />
+            <element signature="e#10905#11113#1" />
+            <element signature="method#infoDel#0;class#UserController#0" />
+            <element signature="e#11405#11441#1" />
+            <element signature="e#11460#11629#1" />
+            <element signature="e#11543#11618#1" />
+            <element signature="method#idCard#0;class#UserController#0" />
+            <element signature="e#12041#12285#1" />
+            <element signature="method#idCard#1;class#UserController#0" />
+            <element signature="e#12557#13292#1" />
+            <element signature="e#12688#12809#1" />
+            <element signature="e#12815#13044#1" />
+            <element signature="e#13070#13282#1" />
+            <element signature="method#idCard#2;class#UserController#0" />
+            <element signature="e#14136#14542#0" />
+            <element signature="e#14181#14338#1" />
+            <element signature="e#14375#14532#1" />
+            <element signature="e#14565#14609#0" />
+            <element signature="e#14682#14809#1" />
+            <element signature="e#14815#14884#1" />
+            <element signature="e#14906#15107#1" />
+            <element signature="method#idCardDel#0;class#UserController#0" />
+            <element signature="e#15388#15424#1" />
+            <element signature="e#15466#15502#1" />
+            <element signature="e#15521#15693#1" />
+            <element signature="e#15608#15683#1" />
+            <element signature="method#property#0;class#UserController#0" />
+            <element signature="e#16121#16374#1" />
+            <element signature="method#property#1;class#UserController#0" />
+            <element signature="e#16655#17144#1" />
+            <element signature="e#16727#16808#1" />
+            <element signature="e#16814#16895#1" />
+            <element signature="e#16921#17134#1" />
+            <element signature="method#propertyDel#0;class#UserController#0" />
+            <element signature="e#17439#17475#1" />
+            <element signature="e#17494#17673#1" />
+            <element signature="e#17585#17662#1" />
+            <element signature="method#role#0;class#UserController#0" />
+            <element signature="e#18023#18251#1" />
+            <element signature="method#role#1;class#UserController#0" />
+            <element signature="e#18490#18930#1" />
+            <element signature="e#18554#18619#1" />
+            <element signature="e#18625#18690#1" />
+            <element signature="e#18716#18920#1" />
+            <element signature="method#roleDel#0;class#UserController#0" />
+            <element signature="e#19191#19227#1" />
+            <element signature="e#19246#19407#1" />
+            <element signature="e#19321#19396#1" />
+            <element signature="method#userRole#0;class#UserController#0" />
+            <element signature="e#19801#20043#1" />
+            <element signature="method#userRole#1;class#UserController#0" />
+            <element signature="e#20308#20775#1" />
+            <element signature="e#20376#20449#1" />
+            <element signature="e#20455#20528#1" />
+            <element signature="e#20554#20765#1" />
+            <element signature="method#userRoleDel#0;class#UserController#0" />
+            <element signature="e#21058#21094#1" />
+            <element signature="e#21113#21284#1" />
+            <element signature="e#21196#21273#1" />
+            <element signature="e#21513#21558#1" />
+            <element signature="e#21605#21650#1" />
+            <element signature="e#25650#25720#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/jz/util/AlipayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="28" column="60" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

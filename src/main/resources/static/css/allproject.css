@@ -1,0 +1,85 @@
+/* 项目大标题div */
+.projectTitleDiv {
+    height: 38px;
+    font-size: 18px;
+    color: rgba(187, 187, 187, 1);
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+/* 项目大标题 */
+.ptitle {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* 项目统计数 */
+.pnumber {
+    margin-left: 3%;
+    font-size: 16px;
+}
+
+/* 类型筛选选择框 */
+.layui-form-item {
+    margin: 0px;
+    width: 100%;
+}
+
+.layui-input-block {
+    margin-left: 0px;
+}
+
+/* 项目搜索div */
+.psearch {
+    height: 38px;
+}
+
+/* 项目搜索按钮 */
+.psearchBtnDiv {
+    text-align: right;
+    padding-right: 13px;
+}
+
+/* 项目搜索输入框 */
+.psearchInfo {
+    height: 31px;
+    display: none;
+}
+
+/* 分页器父div*/
+.fenyediv {
+    height: 55px;
+}
+
+/* 分页器*/
+#fenye {
+    text-align: center;
+}
+
+/*---梦想计划*/
+.dmHImgDiv {
+    height: 400px;
+    background-color: antiquewhite;
+    background-image: url("https://cdn.jsdelivr.net/gh/athink8/cdn/imgs/other/6.jpg");
+    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-size: inherit;
+    flex-wrap:wrap
+}
+
+.dmHImgTitle{
+    font-size: 70px;
+    background-image: linear-gradient(to right, rgba(0, 204, 204, 0.6) 0%, rgba(0, 255, 153, 0.8) 100%);
+    padding: 0.2%;
+    color: antiquewhite;
+}
+.dmHImgInfo{
+    font-size: 26px;
+    background-color: rgba(119,221,221,0.7);
+    color: azure;
+    text-align: center;
+}

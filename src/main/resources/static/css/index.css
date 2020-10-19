@@ -1,0 +1,91 @@
+/* 轮播图 */
+#headTurnImg {
+    margin: auto;
+    border: solid 1px white;
+    cursor: pointer;
+    min-height: 342px;
+    max-height: 345px;
+}
+
+/* 轮播图下的所有图片 */
+#headTurnImg img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+/* 轮播图下的包含左边图片的a */
+.headImgDiv > div > a {
+    width: 60%;
+    position: absolute;
+}
+
+/* 轮播图下的包含右边文字信息的div */
+.headImgDiv > div > div {
+    width: 40%;
+    position: absolute;
+    margin-left: 60%;
+    text-align: center;
+    height: 756.55px;
+    background-color: rgba(204, 255, 255, 0.2);
+}
+
+/* 轮播图右边信息父DIV */
+.headImgInfo {
+    margin: auto;
+    margin-top: 6%;
+    width: 90%;
+    height: 290px;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* 轮播图右边信息所有文字div */
+.headImgInfo > div {
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 7px;
+    text-align: left;
+}
+
+/* 轮播图右边信息文字项目名字 */
+.HPname {
+    font-weight: bold;
+    height: 27px;
+}
+
+/* 轮播图右边信息的项目简介*/
+.HPintroduce {
+    font-size: 14px;
+    /*font-weight: 1;*/
+    text-align: left;
+    line-height: 1.75;
+    margin: 0 auto;
+    height: 120px;
+    background-color: rgba(254, 248, 222, 0.1);
+    overflow: hidden;
+    color: #888888;
+}
+
+/* 轮播图右边信息的统计div */
+.HPamount {
+    width: 100%;
+    color: #009688;
+    height: 38px;
+}
+
+/* 轮播图右边信息的金额统计百分比 */
+.HPpercent {
+    margin-left: 35%;
+    font-size: 13px;
+    color: #B3B3B3;
+}
+
+/* 轮播图右边信息的支持数*/
+.HPsupport {
+    font-size: 13px;
+    color: #B3B3B3;
+    height: 17px;
+}
+

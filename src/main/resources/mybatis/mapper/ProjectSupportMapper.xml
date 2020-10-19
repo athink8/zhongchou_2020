@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectSupportDao">
+
+    <select id="findProjectSupport" resultType="ProjectSupport">
+        select * from zc_project_support
+        <where>
+            <if test="projectSupport!=null">
+                <if test="projectSupport.id!=null">
+                    and id=#{projectSupport.id}
+                </if>
+                <if test="projectSupport.uId!=null">
+                    and u_id=#{projectSupport.uId}
+                </if>
+                <if test="projectSupport.pId!=null">
+                    and p_id=#{projectSupport.pId}
+                </if>
+                <if test="projectSupport.sMoney!=null">
+                    and s_money=#{projectSupport.sMoney}
+                </if>
+                <if test="projectSupport.sDate!=null">
+                    and s_date=#{projectSupport.sDate}
+                </if>
+                <if test="projectSupport.status!=null">
+                    and status=#{projectSupport.status}
+                </if>
+            </if>
+
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateProjectSupport" useGeneratedKeys="true" keyProperty="id" parameterType="ProjectSupport">
+        update zc_project_support
+        <set>
+            <if test="projectSupport!=null">
+                <if test="projectSupport.uId!=null">
+                    , u_id=#{projectSupport.uId}
+                </if>
+                <if test="projectSupport.pId!=null">
+                    , p_id=#{projectSupport.pId}
+                </if>
+                <if test="projectSupport.sMoney!=null">
+                    , s_money=#{projectSupport.sMoney}
+                </if>
+                <if test="projectSupport.sDate!=null">
+                    , s_date=#{projectSupport.sDate,jdbcType=TIMESTAMP}
+                </if>
+                <if test="projectSupport.status!=null">
+                    , status=#{projectSupport.status}
+                </if>
+            </if>
+        </set>
+        <where>
+            <if test="projectSupport!=null">
+                <if test="projectSupport.id!=null">
+                    id=#{projectSupport.id}
+                </if>
+                <if test="projectSupport.uId!=null and projectSupport.pId!=null">
+                    and u_id=#{projectSupport.uId} and p_id=#{projectSupport.pId}
+                </if>
+            </if>
+        </where>
+    </update>
+
+    <insert id="insertProjectSupport" useGeneratedKeys="true" keyProperty="id" parameterType="ProjectSupport">
+        insert into zc_project_support
+        <set>
+            <if test="projectSupport!=null">
+                <if test="projectSupport.status==null">
+                    , status=1
+                </if>
+                <if test="projectSupport.status!=null">
+                    , status=#{projectSupport.status}
+                </if>
+                <if test="projectSupport.uId!=null">
+                    , u_id=#{projectSupport.uId}
+                </if>
+                <if test="projectSupport.pId!=null">
+                    , p_id=#{projectSupport.pId}
+                </if>
+                <if test="projectSupport.sMoney!=null">
+                    , s_money=#{projectSupport.sMoney}
+                </if>
+                <if test="projectSupport.sDate!=null">
+                    , s_date=#{projectSupport.sDate,jdbcType=TIMESTAMP}
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteProjectSupport">
+        delete
+        from zc_project_support
+        <where>
+            <if test="projectSupport!=null">
+                <if test="projectSupport.id!=null">
+                    and id=#{projectSupport.id}
+                </if>
+                <if test="projectSupport.uId!=null and projectSupport.pId!=null">
+                    and u_id=#{projectSupport.uId} and p_id=#{projectSupport.pId}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

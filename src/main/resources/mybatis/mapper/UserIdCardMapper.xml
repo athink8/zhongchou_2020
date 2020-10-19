@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.UserIdCardDao">
+    <select id="findUserIdCard" resultType="UserIdCard">
+        select * from zc_user_idcard
+        <where>
+            <if test="userIdCard!=null">
+                <if test="userIdCard.status!=null">
+                    and status=#{userIdCard.status}
+                </if>
+                <if test="userIdCard.id!=null">
+                    and id=#{userIdCard.id}
+                </if>
+                <if test="userIdCard.uicNumber!=null">
+                    and uic_number=#{userIdCard.uicNumber}
+                </if>
+                <if test="userIdCard.uicName!=null">
+                    and uic_name=#{userIdCard.uicName}
+                </if>
+                <if test="userIdCard.uicImg1!=null">
+                    and uic_img1=#{userIdCard.uicImg1}
+                </if>
+                <if test="userIdCard.uicImg2!=null">
+                    and uic_img2=#{userIdCard.uicImg2}
+                </if>
+                <if test="userIdCard.uicPhone!=null">
+                    and uic_phone=#{userIdCard.uicPhone}
+                </if>
+                <if test="userIdCard.code!=null">
+                    and code=#{userIdCard.code}
+                </if>
+                <if test="userIdCard.uId!=null">
+                    and u_id=#{userIdCard.uId}
+                </if>
+            </if>
+        </where>
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateUserIdCard" useGeneratedKeys="true" keyProperty="id" parameterType="userIdCard">
+        update zc_user_idcard
+        <set>
+            <if test="userIdCard!=null">
+                <if test="userIdCard.id!=null">
+                    ,id=#{userIdCard.id}
+                </if>
+                <if test="userIdCard.uId!=null">
+                    , u_id=#{userIdCard.uId}
+                </if>
+                <if test="userIdCard.status!=null">
+                    , status=#{userIdCard.status}
+                </if>
+                <if test="userIdCard.uicNumber!=null">
+                    , uic_number=#{userIdCard.uicNumber}
+                </if>
+                <if test="userIdCard.uicName!=null">
+                    , uic_name=#{userIdCard.uicName}
+                </if>
+                <if test="userIdCard.uicImg1!=null">
+                    , uic_img1=#{userIdCard.uicImg1}
+                </if>
+                <if test="userIdCard.uicImg2!=null">
+                    , uic_img2=#{userIdCard.uicImg2}
+                </if>
+                <if test="userIdCard.uicPhone!=null">
+                    , uic_phone=#{userIdCard.uicPhone}
+                </if>
+                <if test="userIdCard.code!=null">
+                    , code=#{userIdCard.code}
+                </if>
+
+                <where>
+                    <if test="userIdCard.id!=null">
+                        and id=#{userIdCard.id}
+                    </if>
+                    <if test="userIdCard.uId!=null">
+                        and u_id=#{userIdCard.uId}
+                    </if>
+                </where>
+            </if>
+        </set>
+
+    </update>
+
+    <insert id="insertUserIdCard" useGeneratedKeys="true" keyProperty="id" parameterType="userIdCard">
+        insert into zc_user_idcard set
+        <if test="userIdCard!=null">
+            <if test="userIdCard.status==null">
+                status=0
+            </if>
+            <if test="userIdCard.status!=null">
+                status=#{userIdCard.status}
+            </if>
+            <if test="userIdCard.uicNumber!=null">
+                , uic_number=#{userIdCard.uicNumber}
+            </if>
+            <if test="userIdCard.uicName!=null">
+                , uic_name=#{userIdCard.uicName}
+            </if>
+            <if test="userIdCard.uicImg1!=null">
+                , uic_img1=#{userIdCard.uicImg1}
+            </if>
+            <if test="userIdCard.uicImg2!=null">
+                , uic_img2=#{userIdCard.uicImg2}
+            </if>
+            <if test="userIdCard.uicPhone!=null">
+                , uic_phone=#{userIdCard.uicPhone}
+            </if>
+            <if test="userIdCard.code!=null">
+                , code=#{userIdCard.code}
+            </if>
+            <if test="userIdCard.uId!=null">
+                , u_id=#{userIdCard.uId}
+            </if>
+        </if>
+    </insert>
+
+    <delete id="deleteUserIdCard">
+        delete
+        from zc_user_idcard
+        <where>
+            <if test="userIdCard!=null">
+                <if test="userIdCard.id!=null">
+                    and id=#{userIdCard.id}
+                </if>
+                <if test="userIdCard.uId!=null">
+                    and u_id=#{userIdCard.uId}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

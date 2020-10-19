@@ -1,0 +1,272 @@
+/* 右边文字信息下的所有div */
+.pinfo > div {
+    margin: 5%;
+}
+
+/* 项目名div */
+.projectTitleDiv {
+    height: 74px;
+    font-size: 18px;
+    color: rgba(187, 187, 187, 1);
+    padding: 0px;
+}
+
+/* 项目名 */
+.pname {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    height: 73px;
+    overflow: hidden
+}
+
+/* 用户名div */
+.UnameDiv {
+    text-align: center;
+    color: rgba(170, 170, 170, 1);
+}
+
+/* 用户名a */
+.unamediv {
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(100, 224, 224, 1);
+}
+
+.unamediv:hover {
+    color: rgba(80, 243, 80, 0.5);
+}
+
+/* 项目类型div */
+.ptypediv {
+    height: 70px;
+    font-size: 18px;
+    color: rgba(170, 170, 170, 1);
+}
+
+/* 项目类型 */
+.ptype {
+    line-height: 65px;
+    font-weight: 700;
+}
+
+/* 项目头图片父div */
+.pheadimgDiv {
+    height: 495px;
+    overflow: hidden;
+}
+
+/* 项目头图片 */
+.pheadimg {
+    width: 100%;
+    height: 490px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+/* 项目简介 */
+.pintroduce {
+    font-size: 16px;
+    line-height: 1.5;
+    height: 72px;
+    overflow: hidden;
+}
+
+/* 项目当前金额父div */
+.pnowMoneyDiv {
+    font-size: 34px;
+    color: #21b6c7;
+}
+
+/* 项目进度条父div */
+.ppercentDIV {
+    text-align: right;
+    font-size: 16px;
+    color: rgba(153, 153, 153, 0.7);
+}
+
+/* 项目目标金额父div */
+.ptarMoneyDiv {
+    font-size: 25px;
+    color: rgba(90, 90, 90, 1);
+    font-weight: 500;
+}
+
+/* 项目剩余时间父div */
+.pendDayDiv {
+    margin-top: 5%;
+    font-size: 18px;
+    color: rgba(153, 153, 153, 0.7);
+
+}
+
+/* 项目剩余时间 */
+.pendDay {
+    color: rgba(90, 90, 90, 1);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* 项目支持数父div */
+.psupportDiv {
+    margin-top: 5%;
+    font-size: 18px;
+    color: rgba(153, 153, 153, 0.7);
+
+}
+
+/* 项目支持数 */
+.psupportNum {
+    font-size: 32px;
+    color: rgba(90, 90, 90, 1);
+    font-weight: 700;
+}
+
+/* 完成提示语 */
+.Pmsg {
+    font-size: 18px;
+    color: rgba(153, 153, 153, 1);
+}
+
+/* 分享 */
+.share {
+    margin-left: 4%;
+    font-size: 17px;
+    height: 68px;
+}
+
+/* 第二页菜单栏 */
+.layui-tab-title {
+    height: 63px;
+    font-size: 33px;
+}
+
+/* 具体每一项的一级标题 */
+.mdTitle1 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* 具体每一项的二级标题 */
+.mdTitle2 {
+    color: rgba(179, 179, 179, 1);
+}
+
+/* 右边风险提示 */
+.tip1 {
+    height: 250px;
+    overflow: hidden;
+    margin-top: 13%;
+}
+
+.tip1 > h3 {
+    margin: 3%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.tip1 > p {
+    margin: 3%;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* 支持金额 */
+.yourSupport > * {
+    margin: 3%;
+}
+
+/*回报类型*/
+.rtype {
+    color: blueviolet;
+    font-size: 15px;
+    background-color: lemonchiffon;
+    width: fit-content;
+}
+
+/* 项目详情内容 */
+.pcontent img {
+    width: 99%;
+}
+
+/*支持者详细div*/
+.supports {
+    font-size: 19px;
+    color: blueviolet;
+}
+
+/*分享二维码*/
+#shareQrcode {
+    display: none;
+    overflow: hidden;
+    width: fit-content;
+    height: 125px;
+    position: relative;
+    top: -235%;
+    left: 20%;
+}
+
+.share a:hover .shareQrcode {
+    display: block;
+}
+
+/*评论大div*/
+.comments {
+    font-size: 20px;
+    color: chocolate;
+}
+
+.comments > div {
+    margin: 1%;
+}
+
+.commentForm .layui-input-block {
+    margin-left: 0;
+}
+
+/*评论表单父div*/
+.commentFormDiv {
+    border: 1px solid silver;
+    background: aliceblue;
+}
+
+.commentFormDiv > * {
+    margin: 2%;
+}
+
+/*输入的评论内容*/
+.commentForm .cmcontent {
+    resize: none; /*固定大小*/
+    /*width: 90%;*/
+    height: 113px;
+}
+
+.comments > div {
+    margin: 2%;
+}
+
+/*显示的评论内容*/
+.comment .cmcontent {
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+/*显示的评论的用户名*/
+.comment .cmname {
+    color: #4cbf30;
+}
+
+/*显示的评论的时间*/
+.comment .cmcreateDate {
+    padding: 0.2%;
+    background: #ededed;
+    color: #b3b1b1;
+    font-size: 16px;
+    border-radius: 0.5%;
+    margin-left: 2%;
+}
+
+/*颜色1*/
+.c1 {
+    color: rgba(170, 170, 170, 1);
+}

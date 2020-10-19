@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.UserRoleDao">
+    <select id="findUserRole" resultMap="jz.dao.commonDao.userRole">
+        select u.* ,r.*,ur.*,
+        ur.id ur_id,
+        u.id u_id ,r.id r_id
+        from zc_user_role ur
+        inner join zc_role r,zc_user_info u
+        where ur.u_id=u.id and ur.r_id=r.id
+        <if test="userRole!=null">
+            <if test="userRole.id!=null">
+                and ur.id=#{userRole.id}
+            </if>
+            <if test="userRole.userInfo!=null">
+                <if test="userRole.userInfo.id!=null">
+                    and ur.u_id=#{userRole.userInfo.id}
+                </if>
+            </if>
+            <if test="userRole.role!=null">
+                <if test="userRole.role.id!=null">
+                    and ur.r_id=#{userRole.role.id}
+                </if>
+            </if>
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateUserRole" useGeneratedKeys="true" keyProperty="id">
+        update zc_user_role
+        <set>
+            <if test="userRole!=null">
+                <if test="userRole.userInfo!=null">
+                    <if test="userRole.userInfo.id!=null">
+                        ,u_id=#{userRole.userInfo.id}
+                    </if>
+                </if>
+                <if test="userRole.role!=null">
+                    <if test="userRole.role.id!=null">
+                        ,r_id=#{userRole.role.id}
+                    </if>
+                </if>
+            </if>
+        </set>
+        where id=#{userRole.id}
+    </update>
+
+    <insert id="insertUserRole" useGeneratedKeys="true" keyProperty="id">
+        insert into zc_user_role
+        <set>
+            <if test="userRole!=null">
+                <if test="userRole.userInfo!=null">
+                    <if test="userRole.userInfo.id!=null">
+                        ,u_id=#{userRole.userInfo.id}
+                    </if>
+                </if>
+                <if test="userRole.role!=null">
+                    <if test="userRole.role.id!=null">
+                        ,r_id=#{userRole.role.id}
+                    </if>
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteUserRole">
+        delete
+        from zc_user_role
+        <where>
+            <if test="userRole!=null">
+                <if test="userRole.id!=null">
+                    and id=#{userRole.id}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

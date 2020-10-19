@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.DictionaryItemDao">
+
+    <select id="findDictionaryItem" resultType="DictionaryItem">
+        select dit.*
+        from zc_dictionary_item dit inner join zc_dictionary_type dic
+        where dit.dic_id=dic.id
+        <if test="dictionaryItem!=null">
+            <if test="dictionaryItem.status==null or dictionaryItem.status==1">
+                and dit.status= 1
+            </if>
+            <if test="dictionaryItem.status==0">
+                and dit.status= 0
+            </if>
+            <if test="dictionaryItem.status!=null and dictionaryItem.status!=1 and dictionaryItem.status!=-1">
+                and dit.status= #{dictionaryItem.status}
+            </if>
+            <if test="dictionaryItem.id!=null">
+                and dit.id= #{dictionaryItem.id}
+            </if>
+            <if test="dictionaryItem.dicId!=null">
+                and dit.dic_id= #{dictionaryItem.dicId}
+            </if>
+            <if test="dictionaryItem.itemCode!=null and dictionaryItem.dicId!=null">
+                and dit.item_code= #{dictionaryItem.itemCode}
+                and dit.dic_id= #{dictionaryItem.dicId}
+            </if>
+            <if test="dictionaryItem.itemName!=null and dictionaryItem.dicId!=null">
+                and dit.item_name like CONCAT('%',#{dictionaryItem.itemName},'%')
+            </if>
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateDictionaryItem" useGeneratedKeys="true" keyProperty="id" parameterType="dictionaryItem">
+        update zc_dictionary_item
+        <set>
+            <if test="dictionaryItem!=null">
+                <if test="dictionaryItem.status!=null">
+                    ,status= #{dictionaryItem.status}
+                </if>
+
+                <if test="dictionaryItem.dicId!=null">
+                    ,dic_id= #{dictionaryItem.dicId}
+                </if>
+                <if test="dictionaryItem.itemCode!=null">
+                    ,item_code= #{dictionaryItem.itemCode}
+                </if>
+
+                <if test="dictionaryItem.itemName!=null">
+                    ,item_name= #{dictionaryItem.itemName}
+                </if>
+                <if test="dictionaryItem.itemInfo!=null">
+                    ,item_info= #{dictionaryItem.itemInfo}
+                </if>
+
+            </if>
+        </set>
+        <where>
+            <if test="dictionaryItem!=null">
+                <if test="dictionaryItem.id!=null">
+                    id=#{dictionaryItem.id}
+                </if>
+            </if>
+        </where>
+
+    </update>
+
+    <insert id="insertDictionaryItem" useGeneratedKeys="true" keyProperty="id" parameterType="dictionaryItem">
+        insert into zc_dictionary_item
+        <set>
+            <if test="dictionaryItem!=null">
+                <if test="dictionaryItem.status==null or dictionaryItem.status==1">
+                    , status= 1
+                </if>
+                <if test="dictionaryItem.status==0">
+                    , status= 0
+                </if>
+
+                <if test="dictionaryItem.dicId!=null">
+                    ,dic_id= #{dictionaryItem.dicId}
+                </if>
+                <if test="dictionaryItem.itemCode!=null">
+                    ,item_code= #{dictionaryItem.itemCode}
+                </if>
+
+                <if test="dictionaryItem.itemName!=null">
+                    ,item_name= #{dictionaryItem.itemName}
+                </if>
+                <if test="dictionaryItem.itemInfo!=null">
+                    ,item_info= #{dictionaryItem.itemInfo}
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteDictionaryItem">
+        delete
+        from zc_dictionary_item
+        <where>
+            <if test="dictionaryItem!=null">
+                <if test="dictionaryItem.id!=null">
+                    id=#{dictionaryItem.id}
+                </if>
+            </if>
+        </where>
+    </delete>
+</mapper>
+

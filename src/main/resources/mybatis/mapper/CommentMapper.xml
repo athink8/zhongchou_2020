@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.CommentDao">
+    <select id="findComment" resultType="Comment">
+        select * from zc_comment
+        <where>
+            <if test="comment!=null">
+                <if test="comment.status==null">
+                    and status=1
+                </if>
+                <if test="comment.status!=null">
+                    and status=#{comment.status}
+                </if>
+                <if test="comment.id!=null">
+                    and id=#{comment.id}
+                </if>
+                <if test="comment.cmName!=null">
+                    and cm_name=#{comment.cmName}
+                </if>
+                <if test="comment.cmContent!=null">
+                    and cm_content=#{comment.cmContent}
+                </if>
+                <if test="comment.cmCreateDate!=null">
+                    and cm_createDate=#{comment.cmCreateDate}
+                </if>
+                <if test="comment.pId!=null">
+                    and p_id=#{comment.pId}
+                </if>
+                <if test="comment.uId!=null">
+                    and u_id=#{comment.uId}
+                </if>
+            </if>
+        </where>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <update id="updateComment" useGeneratedKeys="true" keyProperty="id" parameterType="comment">
+        update zc_comment
+        <set>
+            <if test="comment!=null">
+                <if test="comment.status!=null">
+                    , status=#{comment.status}
+                </if>
+                <if test="comment.cmName!=null">
+                    , cm_name=#{comment.cmName}
+                </if>
+                <if test="comment.cmContent!=null">
+                    , cm_content=#{comment.cmContent}
+                </if>
+                <if test="comment.cmCreateDate!=null">
+                    , cm_createDate=#{comment.cmCreateDate}
+                </if>
+                <if test="comment.pId!=null">
+                    , p_id=#{comment.pId}
+                </if>
+                <if test="comment.uId!=null">
+                    , u_id=#{comment.uId}
+                </if>
+            </if>
+        </set>
+        <where>
+            <if test="comment!=null">
+                <if test="comment.id!=null">
+                    id=#{comment.id}
+                </if>
+                <if test="comment.pId!=null">
+                    and p_id=#{comment.pId}
+                </if>
+                <if test="comment.uId!=null">
+                    and u_id=#{comment.uId}
+                </if>
+            </if>
+        </where>
+
+    </update>
+
+    <insert id="insertComment" useGeneratedKeys="true" keyProperty="id" parameterType="comment">
+        insert into zc_comment
+        <set>
+            <if test="comment!=null">
+                <if test="comment.status!=null">
+                    , status=#{comment.status}
+                </if>
+                <if test="comment.cmName!=null">
+                    , cm_name=#{comment.cmName}
+                </if>
+                <if test="comment.cmContent!=null">
+                    , cm_content=#{comment.cmContent}
+                </if>
+                <if test="comment.cmCreateDate!=null">
+                    , cm_createDate=#{comment.cmCreateDate}
+                </if>
+                <if test="comment.pId!=null">
+                    , p_id=#{comment.pId}
+                </if>
+                <if test="comment.uId!=null">
+                    , u_id=#{comment.uId}
+                </if>
+            </if>
+        </set>
+    </insert>
+
+    <delete id="deleteComment">
+        delete
+        from zc_comment
+        <where>
+            <if test="comment!=null">
+                <if test="comment.id!=null">
+                    id=#{comment.id}
+                </if>
+                <if test="comment.pId!=null">
+                    and p_id=#{comment.pId}
+                </if>
+                <if test="comment.uId!=null">
+                    and u_id=#{comment.uId}
+                </if>
+            </if>
+        </where>
+    </delete>
+
+</mapper>
+

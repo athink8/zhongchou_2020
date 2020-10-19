@@ -1,0 +1,7 @@
+{
+  "timestamp": "2020-04-17T16:06:06.118+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "Type definition error: [simple type, class org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy]; nested exception is com.fasterxml.jackson.databind.exc.InvalidDefinitionException: No serializer found for class org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy and no properties discovered to create BeanSerializer (to avoid exception, disable SerializationFeature.FAIL_ON_EMPTY_BEANS) (through reference chain: jz.entities.vo.MyResponse[\"data\"]->java.util.LinkedHashMap[\"userInfo\"]->org.apache.shiro.web.subject.support.WebDelegatingSubject[\"securityManager\"]->org.apache.shiro.web.mgt.DefaultWebSecurityManager[\"authenticator\"]->org.apache.shiro.authc.pam.ModularRealmAuthenticator[\"authenticationStrategy\"])",
+  "path": "/login"
+}

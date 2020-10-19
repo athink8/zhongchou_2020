@@ -1,0 +1,30 @@
+/*中间内容div*/
+.centerDiv {
+    height: 725px;
+    background-color: rgba(100, 174, 224, 1);
+    background-image: url("https://cdn.jsdelivr.net/gh/athink8/cdn/imgs/other/4min.jpg");
+    background-size: cover;
+}
+
+.layui-input-block {
+    margin-left: 0;
+}
+
+/*登录表单的父div*/
+.loginDiv {
+    text-align: left;
+    background: whitesmoke;
+    height: 365px;
+    margin-top: 6%;
+}
+/*登录表单*/
+.loginForm{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/*登录表单下所有div*/
+.loginForm>div{
+    margin-bottom: 5%;
+}
+

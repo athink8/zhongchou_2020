@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="jz.dao.ProjectReportDao">
+    <select id="findProjectReport" resultMap="jz.dao.commonDao.projectReport">
+        select r.* ,dit1.*,
+        r.status r_status,
+        dit1.id d1_id,dit1.dic_id d1_dic_id,dit1.item_code d1_item_code,dit1.item_code d1_item_code,
+        dit1.item_name d1_item_name,dit1.item_info d1_item_info,dit1.status d1_status
+        from zc_project_report r
+        inner join zc_dictionary_item dit1,zc_dictionary_type dic
+        where dit1.status = 1 and dit1.dic_id = dic.id and dic.id = 4
+        and r.r_type=dit1.item_code
+        <if test="projectReport!=null">
+            <if test="projectReport.status==null ">
+                and r.status= 1
+            </if>
+            <if test=" projectReport.status!=null">
+                and r.status= #{projectReport.status}
+            </if>
+            <if test="projectReport.id!=null">
+                and r.id=#{projectReport.id}
+            </if>
+            <if test="projectReport.pId!=null">
+                and r.p_id=#{projectReport.pId}
+            </if>
+            <if test="projectReport.rId!=null">
+                and r.r_id=#{projectReport.rId}
+            </if>
+            <if test="projectReport.rReportDate!=null">
+                and r.r_reportdate=#{projectReport.rReportDate}
+            </if>
+            <if test="projectReport.rType!=null">
+                <if test="projectReport.rType.itemCode!=null">
+                    and r_type= #{projectInfo.rType.itemCode}
+                </if>
+            </if>
+        </if>
+
+        <if test="myPageSize!=null">
+            <if test="myPageSize.size!=0">
+                limit #{myPageSize.size} offset #{myPageSize.offset}
+            </if>
+        </if>
+    </select>
+
+    <insert id="insertProjectReport" keyProperty="id" useGeneratedKeys="true">
+        insert into zc_project_report
+        set
+        <if test="projectReport!=null">
+            <if test="projectReport.status==null ">
+                status= 1
+            </if>
+            <if test=" projectReport.status!=null">
+                status= #{projectReport.status}
+            </if>
+            <if test="projectReport.rId!=null">
+                , r_id=#{projectReport.rId}
+            </if>
+            <if test="projectReport.rMoney!=null">
+                , r_money=#{projectReport.rMoney}
+            </if>
+            <if test="projectReport.rContent!=null">
+                , r_content=#{projectReport.rContent}
+            </if>
+            <if test="projectReport.rAllAmount!=null">
+                , r_allamount=#{projectReport.rAllAmount}
+            </if>
+            <if test="projectReport.rOneAmount!=null">
+                , r_oneamount=#{projectReport.rOneAmount}
+            </if>
+            <if test="projectReport.rReportDate!=null">
+                , r_reportdate=#{projectReport.rReportDate}
+            </if>
+            <if test="projectReport.rType!=null">
+                <if test="projectReport.rType.itemCode!=null">
+                    , r_type= #{projectReport.rType.itemCode}
+                </if>
+            </if>
+            <if test="projectReport.pId!=null">
+                , p_id=#{projectReport.pId}
+            </if>
+        </if>
+    </insert>
+
+    <update id="updateProjectReport" keyProperty="id" useGeneratedKeys="true">
+        update zc_project_report
+        set
+        <if test="projectReport!=null">
+            <if test=" projectReport.status==null">
+                status= 1
+            </if>
+            <if test=" projectReport.status!=null">
+                status= #{ projectReport.status}
+            </if>
+            <if test="projectReport.rId!=null">
+                , r_id=#{projectReport.rId}
+            </if>
+            <if test="projectReport.rMoney!=null">
+                , r_money=#{projectReport.rMoney}
+            </if>
+            <if test="projectReport.rContent!=null">
+                , r_content=#{projectReport.rContent}
+            </if>
+            <if test="projectReport.rAllAmount!=null">
+                , r_allamount=#{projectReport.rAllAmount}
+            </if>
+            <if test="projectReport.rOneAmount!=null">
+                , r_oneamount=#{projectReport.rOneAmount}
+            </if>
+            <if test="projectReport.rReportDate!=null">
+                , r_reportdate=#{projectReport.rReportDate}
+            </if>
+            <if test="projectReport.rType!=null">
+                <if test="projectReport.rType.itemCode!=null">
+                    , r_type= #{projectReport.rType.itemCode}
+                </if>
+            </if>
+            <if test="projectReport.pId!=null">
+                , p_id=#{projectReport.pId}
+            </if>
+        </if>
+        where id=#{projectReport.id}
+    </update>
+
+    <delete id="deleteProjectReport">
+        delete
+        from zc_project_report
+        <where>
+            <if test="projectReport!=null">
+                <if test="projectReport.id!=null">
+                    and id = #{projectReport.id}
+                </if>
+                <if test="projectReport.rId!=null">
+                    and r_id = #{projectReport.rId}
+                </if>
+                <if test="projectReport.pId!=null">
+                    and p_id = #{projectReport.pId}
+                </if>
+            </if>
+        </where>
+    </delete>
+</mapper>
+

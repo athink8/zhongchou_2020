@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fore/common/head::head(~{::title},~{::link},~{::script})}">
+    <title>注册-梦想众筹</title>
+    <!--额外添加的-->
+    <link rel="stylesheet" th:href="@{/css/regist.css}">
+    <script type="text/javascript" th:src="@{/js/regist.js}"></script>
+    <!--验证码-->
+    <link rel="stylesheet" th:href="@{/lib/jQvalicode/verify.css}">
+    <script type="text/javascript" th:src="@{/lib/jQvalicode/verify.min.js}"></script>
+</head>
+<body>
+<div class="layui-fluid">
+    <!--导航栏-->
+    <div th:replace="~{/fore/common/head::#myNav}">导航栏</div>
+
+    <!-- 项目内容 -->
+    <div class="layui-row">
+        <!-- 中间内容块 -->
+        <div class="layui-col-md12 layui-col-xs10 centerCol ">
+            <div class="layui-row centerDiv">
+                <br> <br>
+                <div class=" layui-col-md7">&nbsp;</div>
+                <!-- 注册表单 -->
+                <div class=" layui-col-md3 registDiv ">
+                    <br>
+                    <h1 style="text-align: center">注册</h1>
+                    <form class="layui-form registForm" action="javascript:void(0)" id="registForm"
+                          lay-filter="registForm">
+                        <br>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="hidden" class="existName" value="1">
+                                <input type="text" name="uusername" required lay-verify="required|min2"
+                                       placeholder="请输入用户名" class="layui-input uusername">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="text" name="uphone" required lay-verify="required|not0|phone"
+                                       maxlength="11" placeholder="请输入手机号" class="layui-input ">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="text" name="uemail" required lay-verify="required|email"
+                                       placeholder="请输入邮箱" class="layui-input uemail">
+                            </div>
+                        </div>
+
+                        <div class="layui-form-item layui-form-text">
+                            <div class="layui-input-block">
+                                <input type="password" name="upassword" required lay-verify="required|min6"
+                                       placeholder="请输入密码" class="layui-input ">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <div class="layui-input-block">
+                                <input type="password" name="upassword2" required lay-verify="required|min6"
+                                       placeholder="请再次输入密码" class="layui-input ">
+                            </div>
+                        </div>
+                        <!--滑动验证码-->
+                        <div id="valiCode"></div>
+                        <div class="layui-form-item" style="text-align: center">
+                            <div class="layui-input-block">
+                                <button class="layui-btn registBtn" lay-submit lay-filter="registForm">
+                                    注册
+                                </button>
+                                <button type="reset" class="layui-btn  layui-btn-primary">重置</button>
+                                <a href="/toLogin" style="color: #8EC4E9;padding-left: 3%;font-size: 16px;">登录</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <!-- 结尾部 -->
+    <div th:replace="~{/fore/common/head::#myFooter}">结尾部</div>
+
+</div>
+</body>
+</html>

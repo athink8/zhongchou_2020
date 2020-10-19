@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:fragment="adminHead(title,link)">-->
+<head th:fragment="head(title,link,script)">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--<title th:text="'梦想众筹-'+${title}">梦想众筹</title>-->
+    <title th:replace="${title}">梦想众筹</title>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/athink8/athink8.github.io/medias/logo.png">
+    <meta name="description" content="梦想众筹">
+    <meta name="keywords" content="梦想众筹,众筹">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/css/layui.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/admin/common/adminHead.js"></script>
+    <link rel="stylesheet" href="/admin/common/adminHead.css"/>
+
+    <!--额外添加的-->
+    <th:block th:replace="${link}?${link}:_"/>
+    <th:block th:replace="${script}?${script}:_"/>
+</head>
+<body>
+
+<!--头部-->
+<div class="layui-header" id="adminHead-head">
+    <div class="layui-logo">梦想众筹系统-管理后台</div>
+    <!-- 头部区域 左边 -->
+    <ul class="layui-nav layui-layout-left">
+        <li class="layui-nav-item"><a href="/admin">控制台</a></li>
+        <li class="layui-nav-item cleanCache"><a href="javascript:void(0)">清理缓存</a></li>
+        <li class="layui-nav-item"><a href="/">前台首页</a></li>
+    </ul>
+    <!-- 头部区域 右边 -->
+    <!--已登录显示-->
+    <ul class="layui-nav layui-layout-right" th:if="${session.nowUser}">
+        <li class="layui-nav-item">
+            <input type="hidden" value="" th:value="${session.nowUser.id}" class="uid">
+            <a href="javascript:;" th:text="${session.nowUser.uUsername}">
+                athink
+            </a>
+            <dl class="layui-nav-child">
+                <dd>
+                    <a th:href="'/userInfo?uid='+${session.nowUser.id}">基本资料</a>
+                    <a href="/admin/userAll">信息修改</a>
+                </dd>
+            </dl>
+        </li>
+        <li class="layui-nav-item"><a href="javascript:void(0)" class="loginOut">退出登录</a></li>
+    </ul>
+    <!--未登录显示-->
+    <ul class="layui-nav layui-layout-right" th:if="${session.nowUser==null}">
+        <li class="layui-nav-item"><a href="/toLogin">登录</a></li>
+    </ul>
+</div>
+
+<!--左边导航条--><!--参数ParActive为父目录，ChildActive为子目录-->
+<div class="layui-side layui-bg-black" id="adminHead-left" th:fragment="left(ParActive,ChildActive)">
+    <div class="layui-side-scroll">
+        <!-- 左侧导航区域 -->
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <!--layui-nav-itemed 默认打开-->
+            <li th:class="layui-nav-item">
+                <a href="/admin"><i class="layui-icon layui-icon-home"></i>&nbsp;首页</a>
+            </li>
+            <li th:class="'layui-nav-item '+${ParActive=='2'?'layui-nav-itemed ':''}">
+                <a class="" href="javascript:;">
+                    <i class="layui-icon layui-icon-template-1"></i>&nbsp;项目管理
+                </a>
+                <dl class="layui-nav-child">
+                    <dd th:class="${ChildActive=='2.1'?'layui-this':''}">
+                        <a href="/admin/projectCheck">待审核项目</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='2.2'?'layui-this':''}">
+                        <a href="/admin/projectAll">已发布项目</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='2.3'?'layui-this':''}">
+                        <a href="/admin/projectDreamCheck">梦想计划审核</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='2.4'?'layui-this':''}">
+                        <a href="/admin/projectDreamAll">梦想计划项目</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='2.5'?'layui-this':''}">
+                        <a href="/admin/projectOrder">订单管理</a>
+                    </dd>
+                </dl>
+            </li>
+            <li th:class="'layui-nav-item '+${ParActive=='3'?'layui-nav-itemed ':''}">
+                <a href="javascript:;">
+                    <i class="layui-icon layui-icon-username"></i>&nbsp;用户管理
+                </a>
+                <dl class="layui-nav-child">
+                    <dd th:class="${ChildActive=='3.1'?'layui-this':''}">
+                        <a href="/admin/userAll">用户信息管理</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='3.2'?'layui-this':''}">
+                        <a href="/admin/userRole">用户权限管理</a>
+                    </dd>
+                </dl>
+            </li>
+            <li th:class="'layui-nav-item '+${ParActive=='4'?'layui-nav-itemed ':''}">
+                <a href="javascript:;">
+                    <i class="layui-icon layui-icon-set"></i>&nbsp;其他管理
+                </a>
+                <dl class="layui-nav-child">
+                    <dd th:class="${ChildActive=='4.1'?'layui-this':''}">
+                        <a href="/admin/dictionaryItem">字典管理</a>
+                    </dd>
+                    <dd th:class="${ChildActive=='4.2'?'layui-this':''}">
+                        <a href="/admin/foreIndex">前台首页管理</a>
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--底部-->
+<div class="layui-footer" id="adminHead-foot" style="background-color: rgba(152,149,137,0.5);">
+    <!-- 底部固定区域 -->
+    © 梦想众筹系统 2019-2020 . Athink_
+</div>
+
+</body>
+</html>

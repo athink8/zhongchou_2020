@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{/admin/common/adminHead::head(~{::title},~{::link},~{::script})}">
+    <title>首页-后台管理-梦想众筹系统</title>
+    <!--额外添加的-->
+    <script type="text/javascript" th:src="@{/admin/js/index.js}"></script>
+    <!--数据可视化表格-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+
+    <!--头部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-head}">头部导航栏</div>
+    <!--左边-->
+    <div th:replace="~{/admin/common/adminHead::left(ParActive='',ChildActive='')}">左边导航栏</div>
+    <!--底部-->
+    <div th:replace="~{/admin/common/adminHead::#adminHead-foot}">底部</div>
+
+
+    <!--中间内容-->
+    <div class="layui-body c1">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">
+
+            <!--公告-->
+            <div class="layui-card">
+                <div class="layui-card-header">公告</div>
+                <div class="layui-card-body">
+                    》 欢迎使用梦想众筹系统-后台管理 &nbsp！&nbsp 今天天气不错，祝您万事如意！
+                </div>
+            </div>
+
+            <!--数据统计-->
+            <div class="layui-card">
+                <div class="layui-card-header"><i class="fa fa-warning icon"></i>数据统计</div>
+                <div class="layui-card-body">
+                    <div class="layui-row layui-col-space10">
+                        <div class="layui-col-xs6 layui-col-md3 ">
+                            <div class="userCountDiv c1 c2">
+                                <span class="layui-bg-blue">实时</span>
+                                <h4>用户统计</h4>
+                                <div class="userCountContent">
+                                    <h1 class="userCount">0</h1>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-md3 ">
+                            <div class="projectCountDiv c1 c2">
+                                <span class="layui-bg-green">实时</span>
+                                <h4>总项目统计</h4>
+                                <div class="projectCountContent">
+                                    <h1 class="projectCount">0</h1>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-md3 ">
+                            <div class="dreamCountDiv c1 c2">
+                                <span class="layui-bg-orange">实时</span>
+                                <h4>梦想计划统计</h4>
+                                <div class="dreamContent">
+                                    <h1 class="dreamCount">0</h1>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-col-xs6 layui-col-md3 ">
+                            <div class="orderCountDiv c1 c2">
+                                <span class="layui-bg-cyan">实时</span>
+                                <h4>订单统计</h4>
+                                <div class="orderContent">
+                                    <h1 class="orderCount">0</h1>
+                                    <small>当前分类总记录数</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--数据图表-->
+            <div class="layui-card">
+                <div class="layui-card-header">数据趋势</div>
+                <div class="layui-card-body">
+                    <div class="layui-row layui-col-space10">
+                        <div class="layui-col-xs9 layui-col-md10 layui-col-md-offset1 ">
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

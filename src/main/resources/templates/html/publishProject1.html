@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>基本信息编辑-梦想众筹-发现新生活</title>
+		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+		<script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+		<script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+		<script src="../../static/lib/jQuery/jquery-1.11.0.min.js" type="text/javascript"></script>
+		<link rel="stylesheet" media="all" href="../../static/lib/layui/css/layui.css" />
+		<script type="text/javascript" src="../../static/lib/layui/layui.js"></script>
+		<script type="text/javascript" src="../../static/js/publishProject1.js"></script>
+		<link rel="stylesheet" href="../../static/css/publishProject1.css" />
+	</head>
+	<body>
+		<div class="layui-fluid">
+			<!-- 导航栏 -->
+			<nav id="myNav">
+				<ul class="layui-nav " lay-filter="">
+					<li class="layui-nav-item " id="myNavLogo"><a href="index.html"><img src="../../static/img/smallico.png" class="layui-nav-img">梦想众筹</a></li>
+					<!-- <li class="layui-nav-item "><a href="#2">首页</a></li> -->
+					<li class="layui-nav-item"><a href="allproject.html">发现项目</a></li>
+					<li class="layui-nav-item"><a href="#4">梦想计划</a></li>
+					<li class="layui-nav-item"><a href="publishProject1.html">发布众筹</a></li>
+					<li class="layui-nav-item"><a href="#3">资讯动态</a></li>
+					<li class="layui-nav-item" id="myNavLogin">
+						<a href="#3">登录</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;">注册</a></dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item navUser" id="loginUser">
+						<a href="#3">jz</a>
+						<dl class="layui-nav-child">
+							<dd><a href="javascript:;">退出登录</a></dd>
+						</dl>
+					</li>
+				</ul>
+			</nav>
+			<br /><br /><br />
+
+			<!-- 项目内容 -->
+			<div class="layui-row">
+				<!-- 左边留白两格 -->
+				<div class="layui-col-md2 layui-col-xs2 blankCol1"></div>
+				<!-- 中间内容块 -->
+				<div class="layui-col-md8 layui-col-xs8 layui-col-space25 centerCol">
+					<!-- 编辑项目资料 -->
+					<!-- 发布项目标题 -->
+					<div class="layui-row ">
+						<div class=" layui-col-md12 projectTitle">
+							编辑项目资料
+						</div>
+					</div>
+					<br><br><br>
+					<!-- 阶段标题 -->
+					<div class="layui-row ">
+						<div class="layui-col-md1 layui-col-xs0 ">&nbsp;</div>
+						<div class=" layui-col-md10 layui-col-xs12 publishTitle">
+							<div class="layui-col-md-offset1 layui-col-xs-offset1  layui-col-md2 layui-col-xs2">
+								<i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+								<span>基础信息</span>
+							</div>
+							<div class="layui-col-md2 layui-col-xs2">
+								<i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+								<span>详细内容</span>
+							</div>
+							<div class="layui-col-md2 layui-col-xs2">
+								<i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+								<span>设置回报</span>
+							</div>
+							<div class="layui-col-md2 layui-col-xs2">
+								<i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+								<span>联系信息</span>
+							</div>
+							<div class="layui-col-md2 layui-col-xs2">
+								<i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+								<span>认证信息</span>
+							</div>
+						</div>
+						<div class="layui-col-md1 layui-col-xs0 ">&nbsp;</div>
+					</div>
+					<br /><br /><br><br>
+					<!-- 基础信息内容 -->
+					<div class="layui-row ">
+						<!-- 头图片 -->
+						<div class="layui-row ">
+							<!-- 标题 -->
+							<div class="layui-col-md12 mdTitle1">
+								<span>项目封面图 *</span>
+								<span style="color: red;font-size: 15px;display: none;" class="error1">(必填)</span>
+							</div>
+							<hr width="10%" />
+							<!-- 小标题 -->
+							<div class="layui-col-md12 mdTitle2">
+								<span>(图片应简洁清晰，说明产品亮点即可，比例最好3:2，大小&lt;1M)</span>
+							</div>
+							<!-- 头图片上传 -->
+							<div class="layui-upload-drag layui-col-md8" id="phimgdiv">
+								<i class="layui-icon"></i>
+								<p>点击上传，或将文件拖拽到此处</p>
+								<div class="layui-upload-list">
+									<img class="layui-upload-img" id="phimg" src="" alt="">
+									<p id="errtext"></p>
+								</div>
+							</div>
+						</div>
+
+						<!-- 表单内容 -->
+						<div class="layui-row ">
+							<div class="layui-col-md10 layui-col-xs10">
+								<form class="layui-form" action="javascripe:return false" id="form1" lay-filter="form1">
+									<!-- 项目名 -->
+									<div class="layui-form-item">
+										<div class="layui-input-block pnameDiv">
+											<!-- 标题 -->
+											<div class=" mdTitle1">
+												项目标题 *
+											</div>
+											<hr width="10%" />
+											<!-- 小标题 -->
+											<div class=" mdTitle2">
+												(项目标题可以直接讲述你想要完成的创想，也可以解释你的核心产品，需带有众筹产品的名称)
+											</div>
+											<br />
+											<!-- 项目名输入框 -->
+											<input type="text" name="pname" required="required" maxlength="30" lay-verify="required" placeholder="输入标题，字数少于30字哦"
+											 autocomplete="off" class="layui-input pname">
+										</div>
+									</div>
+									<!-- 项目简介 -->
+									<div class="layui-form-item layui-form-text">
+										<!-- 标题 -->
+										<div class=" mdTitle1">
+											项目简介 *
+										</div>
+										<hr width="10%" />
+										<!-- 小标题 -->
+										<div class=" mdTitle2">
+											(项目简介介绍你的创意以及发起众筹的原因，让大家更直观地了解这个项目。)
+										</div>
+										<br />
+										<div class="layui-input-block">
+											<!-- 项目简介输入框 -->
+											<textarea name="pintroduce" required="required" maxlength="130" lay-verify="required" placeholder="输入项目简介，内容少于130字"
+											 class="layui-textarea pintroduce"></textarea>
+										</div>
+									</div>
+									<!-- 项目类型 -->
+									<div class="layui-form-item">
+										<!-- 标题 -->
+										<div class=" mdTitle1">
+											项目类型 *
+										</div>
+										<hr width="10%" />
+										<div class="layui-input-block">
+											<select name="ptype" lay-verify="required">
+												<option value=""></option>
+												<option value="0">创意</option>
+												<option value="1">游戏</option>
+												<option value="2">动漫</option>
+												<option value="3">科技</option>
+												<option value="4">音乐</option>
+												<option value="5">其他</option>
+											</select>
+										</div>
+									</div>
+									<!-- 项目开始时间 -->
+									<div class="layui-form-item">
+										<div class="layui-input-block pnameDiv">
+											<!-- 标题 -->
+											<div class=" mdTitle1">
+												项目开始时间 *
+											</div>
+											<hr width="15%" style="height: 0.8px;" />
+											<br />
+											<!-- 项目开始时间选择器 -->
+											<input type="text" name="pstartdate" class="layui-input selectdate" readonly="readonly" id="pstartdate"
+											 lay-verify="required" placeholder="最少明天开始" autocomplete="off">
+										</div>
+									</div>
+									<!-- 项目结束时间 -->
+									<div class="layui-form-item">
+										<div class="layui-input-block pnameDiv">
+											<!-- 标题 -->
+											<div class=" mdTitle1">
+												项目结束时间 *
+											</div>
+											<hr width="15%" />
+											<br />
+											<!-- 项目结束时间选择器 -->
+											<input type="text" name="penddate" class="layui-input selectdate" id="penddate" readonly="readonly"
+											 lay-verify="required" placeholder="最少7天结束" autocomplete="off">
+										</div>
+									</div>
+									<br /><br /><br /><br />
+									<!-- 提交按钮 -->
+									<div class="layui-row">
+										<div class="layui-col-md-offset9 layui-col-md2 pinfodiv" style="height: 38px;line-height: 45px;">
+											<p style="float: left;">查看 &nbsp;</p>
+											<a href="#pinfo">《发起者协议》</a>
+										</div>
+										<div class="layui-col-md1 ">
+											<button id="imgsaveBtn" hidden="hidden">图片保存</button>
+											<button type="button" class="layui-btn saveBtn" lay-submit lay-filter="form1">保存，进入下一步</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- 右边留白两格 -->
+				<div class="layui-col-md2 layui-col-xs2 blankcol1"></div>
+			</div>
+
+			<!-- 结尾部 -->
+			<br /><br /><br />
+			<hr style="width: 100%;height: 1px;" />
+			<footer class="myFooter">
+				<br /><br />
+				<span class="layui-breadcrumb" lay-separator=" ">
+					<a href="">关于我们</a>
+					<a href="">联系我们</a>
+					<a href="">意见反馈</a>
+					<a href="">版权许可</a>
+					<a href="">客服帮助</a>
+				</span>
+				<br /><br />
+				<div style="color: #9F9F9F;">CopyRight 梦想众筹 2019-2020 @Athink_</div>
+				<br /><br />
+			</footer>
+			<!-- 到底了 -->
+		</div>
+	</body>
+</html>

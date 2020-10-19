@@ -1,0 +1,66 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: 梦想众筹系统
+  thymeleaf:
+    cache: false
+  #邮件配置
+  mail:
+    sender: v1@onfree.cn#自定义的邮箱发送者
+    host: smtp.ym.163.com    #服务地址
+    port: 25
+    username: v1@onfree.cn #邮件发送者
+    password:     #smtp/POP3 密钥
+    protocol: smtp    #服务协议
+    default-encoding: UTF-8
+  #热部署
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java
+      exclude: templates/**,static/**
+  #数据源基本配置
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///zhongchou?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    type: com.alibaba.druid.pool.DruidDataSource
+    #数据源其他配置
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    #配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+    filters: stat,wall
+    maxPoolPreparedStatementPerConnectionSize: 20
+    useGlobalDataSourceStat: true
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=500
+  jmx:
+    enabled: false
+
+mybatis:
+  type-aliases-package: jz.entities.po    # 所有Entity别名类所在包
+  config-location: classpath:mybatis/mybatis-config.xml #指定全局配置文件的位置
+  mapper-locations: classpath:mybatis/mapper/*.xml  #指定sql映射文件的位置
+
+#开启日志sql语句显示
+logging:
+  level:
+    jz:
+      dao: debug
+#  file:
+#    name: log.txt
+#    path: log #失败
+#  pattern:
+#    console: "%d{yyyy-MM-dd} %-5level %logger{50} - %msg%"
+#    file: "%d{yyyy-MM-dd} [%thread] %-5level %logger{50} - %msg%"
+

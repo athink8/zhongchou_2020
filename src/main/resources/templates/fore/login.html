@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fore/common/head::head(~{::title},~{::link},~{::script})}">
+    <title>登录-梦想众筹</title>
+    <!--额外添加的-->
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+    <script type="text/javascript" th:src="@{/js/login.js}"></script>
+
+    <!--验证码-->
+    <link rel="stylesheet" th:href="@{/lib/jQvalicode/verify.css}">
+    <script type="text/javascript" th:src="@{/lib/jQvalicode/verify.min.js}"></script>
+</head>
+<body>
+<div class="layui-fluid">
+    <!--导航栏-->
+    <div th:replace="~{/fore/common/head::#myNav}">导航栏</div>
+
+    <!-- 项目内容 -->
+    <div class="layui-row">
+        <!-- 中间内容块 -->
+        <div class="layui-col-md12 layui-col-xs10 centerCol ">
+            <div class="layui-row centerDiv">
+                <br> <br>
+                <div class=" layui-col-md7">&nbsp;</div>
+                <!-- 登录表单 -->
+                <div class=" layui-col-md3 loginDiv ">
+                    <br>
+                    <h1 style="text-align: center">登录</h1>
+                    <form class="layui-form loginForm" action="javascript:void1()" id="loginForm"
+                          lay-filter="loginForm">
+                        <br>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <input type="text" name="uUsername" required lay-verify="required"
+                                       placeholder="用户名/邮箱/手机号" class="layui-input ">
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <div class="layui-input-block">
+                                <input type="password" name="uPassword" required lay-verify="required"
+                                       placeholder="密码" class="layui-input ">
+                            </div>
+                        </div>
+                        <div class="layui-form-item">
+                            <label class="layui-form-label" style="text-align: left;width: fit-content;">记住我</label>
+                            <div class="layui-input-block">
+                                <input type="checkbox" name="rememberMe" lay-skin="switch">
+                                <input type="checkbox" name="selUrl" lay-skin="switch" lay-text="后台|前台">
+                                <a href="#forgetPsd" style="color: burlywood;padding-left: 30%;">忘记密码?</a>
+                            </div>
+                        </div>
+                        <!--滑动验证码-->
+                        <div id="valiCode"></div>
+                        <div class="layui-form-item" style="text-align: center">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="loginForm">登录</button>
+                                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                <a href="/toRegist" style="color: #8EC4E9;padding-left: 3%;font-size: 16px;">注册</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br/><br/>
+
+    <!-- 结尾部 -->
+    <div th:replace="~{/fore/common/head::#myFooter}">结尾部</div>
+
+</div>
+</body>
+</html>

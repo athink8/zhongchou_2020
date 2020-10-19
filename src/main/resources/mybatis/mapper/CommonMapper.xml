@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--这是相同resultMap的集合，实际并没有绑定接口Dao-->
+<mapper namespace="jz.dao.commonDao">
+
+    <resultMap id="projectInfo" type="ProjectInfo">
+        <id column="p_id" property="id"/>
+        <result column="p_name" property="pName"/>
+        <result column="p_headimg" property="pHeadImg"/>
+        <result column="p_introduce" property="pIntroduce"/>
+        <result column="p_content" property="pContent"/>
+        <result column="p_nowmoney" property="pNowMoney"/>
+        <result column="p_tarmoney" property="pTarMoney"/>
+        <result column="p_publishdate" property="pPublishDate"/>
+        <result column="p_startdate" property="pStartDate"/>
+        <result column="p_enddate" property="pEndDate"/>
+        <result column="p_supportnum" property="pSupportNum"/>
+        <result column="p_status" property="status"/>
+        <result column="p_ispublish" property="pIsPublish"/>
+        <collection property="userInfo" ofType="userInfo">
+            <id column="u_id" property="id"/>
+            <result column="u_username" property="uUsername"/>
+            <result column="u_name" property="uName"/>
+            <result column="u_password" property="uPassword"/>
+            <result column="u_email" property="uEmail"/>
+            <result column="u_phone" property="uPhone"/>
+            <result column="u_lock" property="uLock"/>
+            <result column="status" property="status"/>
+            <result column="u_code" property="code"/>
+        </collection>
+        <collection property="pType" ofType="dictionaryItem" column="dit1">
+            <id column="d1_id" property="id"/>
+            <result column="d1_dic_id" property="dicId"/>
+            <result column="d1_item_code" property="itemCode"/>
+            <result column="d1_item_name" property="itemName"/>
+            <result column="d1_item_info" property="itemInfo"/>
+            <result column="d1_status" property="status"/>
+        </collection>
+        <collection property="pStage" ofType="dictionaryItem" column="dit2">
+            <id column="d2_id" property="id"/>
+            <result column="d2_dic_id" property="dicId"/>
+            <result column="d2_item_code" property="itemCode"/>
+            <result column="d2_item_name" property="itemName"/>
+            <result column="d2_item_info" property="itemInfo"/>
+            <result column="d2_status" property="status"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="projectReport" type="ProjectReport">
+        <id column="id" property="id"/>
+        <result column="r_id" property="rId"/>
+        <result column="r_money" property="rMoney"/>
+        <result column="r_content" property="rContent"/>
+        <result column="r_allamount" property="rAllAmount"/>
+        <result column="r_oneamount" property="rOneAmount"/>
+        <result column="r_reportdate" property="rReportDate"/>
+        <result column="p_id" property="pId"/>
+        <result column="r_status" property="status"/>
+        <collection property="rType" ofType="dictionaryItem" column="dit1">
+            <id column="d1_id" property="id"/>
+            <result column="d1_dic_id" property="dicId"/>
+            <result column="d1_item_code" property="itemCode"/>
+            <result column="d1_item_name" property="itemName"/>
+            <result column="d1_item_info" property="itemInfo"/>
+            <result column="d1_status" property="status"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="projectOrder" type="ProjectOrder">
+        <id column="id" property="id"/>
+        <result column="o_id" property="oId"/>
+        <result column="o_tradeId" property="oTradeId"/>
+        <result column="o_name" property="oName"/>
+        <result column="o_money" property="oMoney"/>
+        <result column="o_createTime" property="oCreateTime"/>
+        <result column="o_payTime" property="oPayTime"/>
+        <result column="o_receipt" property="oReceipt"/>
+        <result column="o_receiveName" property="oReceiveName"/>
+        <result column="o_address" property="oAddress"/>
+        <result column="o_phone" property="oPhone"/>
+        <result column="o_num" property="oNum"/>
+        <result column="r_id" property="rId"/>
+        <result column="p_id" property="pId"/>
+        <result column="u_id" property="uId"/>
+        <result column="o_status" property="status"/>
+        <collection property="oPayType" ofType="dictionaryItem">
+            <id column="d1_id" property="id"/>
+            <result column="d1_dic_id" property="dicId"/>
+            <result column="d1_item_code" property="itemCode"/>
+            <result column="d1_item_name" property="itemName"/>
+            <result column="d1_item_info" property="itemInfo"/>
+            <result column="d1_status" property="status"/>
+        </collection>
+        <collection property="oType" ofType="dictionaryItem" >
+            <id column="d2_id" property="id"/>
+            <result column="d2_dic_id" property="dicId"/>
+            <result column="d2_item_code" property="itemCode"/>
+            <result column="d2_item_name" property="itemName"/>
+            <result column="d2_item_info" property="itemInfo"/>
+            <result column="d2_status" property="status"/>
+        </collection>
+    </resultMap>
+
+    <resultMap id="userRole" type="UserRole">
+        <id column="ur_id" property="id"/>
+        <collection property="userInfo" ofType="userInfo">
+            <id column="u_id" property="id"/>
+            <result column="u_username" property="uUsername"/>
+            <result column="u_name" property="uName"/>
+            <result column="u_password" property="uPassword"/>
+            <result column="u_email" property="uEmail"/>
+            <result column="u_phone" property="uPhone"/>
+            <result column="u_lock" property="uLock"/>
+            <result column="status" property="status"/>
+            <result column="code" property="code"/>
+        </collection>
+        <collection property="role" ofType="role" >
+            <id column="r_id" property="id"/>
+            <result column="r_roleName" property="rRoleName"/>
+            <result column="r_operate" property="rOperate"/>
+        </collection>
+    </resultMap>
+</mapper>
+

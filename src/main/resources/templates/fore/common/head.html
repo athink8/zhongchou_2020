@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:fragment="head(title,link)">-->
+<head th:fragment="head(title,link,script)">
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!--<title th:text="'梦想众筹-'+${title}">梦想众筹</title>-->
+    <title th:replace="${title}">梦想众筹</title>
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/athink8/athink8.github.io/medias/logo.png">
+    <meta name="description" content="梦想众筹">
+    <meta name="keywords" content="梦想众筹,众筹">
+    <!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/css/layui.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/layui-src@2.5.5/dist/layui.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="/common/head.js"></script>
+    <link rel="stylesheet" href="/common/head.css"/>
+
+    <!--额外添加的-->
+    <th:block th:replace="${link}?${link}:_"/>
+    <th:block th:replace="${script}?${script}:_"/>
+</head>
+<body>
+
+<!-- 导航栏 -->
+<nav id="myNav">
+    <ul class="layui-nav " lay-filter="">
+        <li class="layui-nav-item " id="myNavLogo"><a th:href="@{/}">
+            <img src="/img/smallico.png" class="layui-nav-img">梦想众筹</a></li>
+        <!-- <li class="layui-nav-item "><a href="#2">首页</a></li> -->
+        <li class="layui-nav-item"><a th:href="@{/allproject}">浏览项目</a></li>
+        <li class="layui-nav-item"><a th:href="@{/dream}">梦想计划</a></li>
+        <li class="layui-nav-item"><a th:href="@{/publishProject1}">发布众筹</a></li>
+        <li class="layui-nav-item right" id="myNavLogin" th:if="${session.nowUser==null}">
+            <a href="javascript:" class="toLoginBtn">登录</a>
+            <!--<dl class="layui-nav-child">
+                <dd><a href="#4">注册</a></dd>
+            </dl>-->
+        </li>
+        <li class="layui-nav-item right" id="myNavRegist" th:if="${session.nowUser==null}">
+            <a href="javascript:" class="toRegistBtn">注册</a>
+        </li>
+        <li th:if="${session.nowUser}" class="layui-nav-item navUser" id="loginUser">
+            <input type="hidden" value="" th:value="${session.nowUser.id}" class="uid">
+            <a th:href="'/userInfo?uid='+${session.nowUser.id}" th:text="${session.nowUser.uUsername}">jz</a>
+            <dl class="layui-nav-child">
+                <dd><a th:href="'/userInfo?uid='+${session.nowUser.id}">个人信息</a></dd>
+                <dd><a href="javascript:void(0)" class="loginOut">退出登录</a></dd>
+            </dl>
+        </li>
+    </ul>
+</nav>
+
+<!-- 阶段标题 -->
+<div class="layui-row " id="stageTitle">
+    <div class="layui-col-md1 layui-col-xs0 ">&nbsp;</div>
+    <div class=" layui-col-md10 layui-col-xs12 publishTitle">
+        <div class="layui-col-md-offset1 layui-col-xs-offset1  layui-col-md2 layui-col-xs2">
+            <i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+            <span>基础信息</span>
+        </div>
+        <div class="layui-col-md2 layui-col-xs2">
+            <i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+            <span>详细内容</span>
+        </div>
+        <div class="layui-col-md2 layui-col-xs2">
+            <i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+            <span>设置回报</span>
+        </div>
+        <div class="layui-col-md2 layui-col-xs2">
+            <i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+            <span>联系信息</span>
+        </div>
+        <div class="layui-col-md2 layui-col-xs2">
+            <i class="layui-icon layui-icon-ok-circle" style="color: #CCCCCC;"></i>
+            <span>认证信息</span>
+        </div>
+    </div>
+    <div class="layui-col-md1 layui-col-xs0 ">&nbsp;</div>
+</div>
+
+<!-- 结尾部 -->
+<footer class="layui-row myFooter" id="myFooter">
+    <br/><br/>
+    <span class="layui-breadcrumb" lay-separator=" " cl>
+					<a href="javascript:void(0)">关于我们</a>
+					<a href="javascript:void(0)">联系我们</a>
+					<a href="javascript:void(0)">意见反馈</a>
+					<a href="javascript:void(0)">版权许可</a>
+				</span>
+    <br/><br/>
+    <div style="color: #9F9F9F;">CopyRight 梦想众筹 2019-2020 @Athink_</div>
+    <br/><br/>
+</footer>
+</body>
+</html>

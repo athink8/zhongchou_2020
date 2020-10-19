@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ch" xmlns:th="http://www.thymeleaf.org">
+<!--<head th:replace="~{/fore/common/head::head(title='发现新生活',~{::link})}">-->
+<head th:replace="~{fore/common/head::head(~{::title},~{::link},~{::script})}">
+    <title>详细内容编辑-梦想众筹-发现新生活</title>
+    <!--额外添加的-->
+    <link rel="stylesheet" th:href="@{/css/publishProject2.css}">
+    <script type="text/javascript" th:src="@{/js/publishProject2.js}"></script>
+    <!--wang富文本-->
+    <script type="text/javascript" th:src="@{/lib/wangEditor/wangEditor.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/lib/wangEditor/wangEditor-fullscreen-plugin.css}">
+    <script type="text/javascript" th:src="@{/lib/wangEditor/wangEditor-fullscreen-plugin.js}"></script>
+</head>
+<body>
+<div class="layui-fluid">
+    <!--导航栏-->
+    <div th:replace="~{/fore/common/head::#myNav}">导航栏</div>
+    <br><br/><br/>
+
+    <!-- 项目内容 -->
+    <div class="layui-row">
+        <!-- 左边留白两格 -->
+        <div class="layui-col-md2 layui-col-xs2 blankCol1"></div>
+        <!-- 中间内容块 -->
+        <div class="layui-col-md8 layui-col-xs8 layui-col-space25 centerCol">
+            <!-- 编辑项目资料 -->
+            <!-- 发布项目标题 -->
+            <div class="layui-row ">
+                <div class=" layui-col-md12 projectTitle">
+                    编辑项目资料
+                </div>
+            </div>
+            <br><br><br>
+            <!-- 阶段标题 -->
+            <div th:replace="~{/fore/common/head::#stageTitle}">阶段标题</div>
+            <!--隐藏的当前阶段标识-->
+            <input type="hidden" class="nowStageTitle" value="2">
+            <br/><br/><br><br>
+
+            <!-- 基础信息内容 -->
+            <div class="layui-row ">
+                <!-- 标题内容 -->
+                <div class="layui-col-md10 layui-col-xs10">
+                    <!-- 项目id -->
+                    <input type="hidden" name="pid" value="" class="pid">
+                    <!-- 标题 -->
+                    <div class=" mdTitle1">
+                        详细内容介绍 *
+                    </div>
+                    <hr width="10%"/>
+                    <!-- 小标题 -->
+                    <div class=" mdTitle2">
+                        (详细内容应具体描述和排版你的内容，不应过于随意，插入图片推荐3:2，图片大小应小于300k)
+                    </div>
+                    <br/>
+                </div>
+                <!-- 富文本编辑器 -->
+                <div id="editor" class="layui-row">
+                    <p></p>
+                </div>
+                <br/><br/><br/><br/>
+                <!-- 提交按钮 -->
+                <div class="layui-row">
+                    <div class="layui-col-md-offset8 layui-col-md2 pinfodiv" style="height: 38px;line-height: 45px;">
+                        <p style="float: left;">查看 &nbsp;</p>
+                        <a href="javascript:void(0)" class="ppInfo">《发起者协议》</a>
+                    </div>
+                    <div class="layui-col-md2 ">
+                        <button type="button" class="layui-btn saveBtn" id="saveBtn">保存，进入下一步</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- 左边留白两格 -->
+        <div class="layui-col-md2 layui-col-xs2 blankCol1"></div>
+    </div>
+
+    <!-- 结尾部 -->
+    <br/><br/><br/>
+    <div th:replace="~{/fore/common/head::#myFooter}">结尾部</div>
+</div>
+</body>
+</html>

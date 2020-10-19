@@ -1,0 +1,237 @@
+.layui-fluid {
+    background-color: rgba(238, 238, 238, 0.6);
+    padding: 0px;
+    margin: 0 auto;
+}
+
+/* 导航条最外层div */
+#myNav {
+    height: 63px;
+    width: 100%;
+}
+
+/* 导航条 */
+.layui-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-image: linear-gradient(to right, rgba(0, 204, 204, 0.1) 0%, rgba(0, 255, 153, 0.3) 100%);
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px white;
+}
+
+/* 导航条里a文字 */
+.layui-nav .layui-nav-item a {
+    color: black;
+    font-size: 17px;
+}
+
+.layui-nav .layui-nav-item a:hover {
+    color: darkcyan;
+}
+
+/* 导航条里logo文字 */
+#myNavLogo a {
+    font-size: 18px;
+    color: #009688;
+    font-weight: bold;
+}
+
+/* 导航条中得登录按钮 */
+#myNavLogin {
+    left: 28%;
+}
+
+/* 导航条中得注册按钮 */
+#myNavRegist {
+    left: 28%;
+}
+
+/* 导航条中已登录用户信息按钮*/
+#loginUser {
+    left: 24%;
+}
+
+/* 两边留白一格 */
+.blankCol1 {
+    height: 100px;
+}
+
+/* 中间内容div */
+.centerCol {
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+/* 阶段性标题父div */
+.publishTitle {
+    line-height: 47px;
+    height: 45px;
+    font-size: 21px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* 阶段性每个标题 */
+.publishTitle > div {
+    border: 1px solid rgba(179, 179, 179, 0.6);
+    cursor: pointer;
+    /* background-color: aliceblue; */
+}
+
+/* 右下角 */
+.layui-fixbar li {
+    width: 44px;
+    height: 44px;
+}
+
+/* 结尾 */
+.myFooter {
+    text-align: center;
+    background-color: white;
+}
+
+/* 两边留白一格 */
+.blankCol1 {
+    height: 100px;
+}
+
+/* 中间内容div */
+.centerCol {
+    /* background-color: rgba(255, 255, 255, 0.5); */
+}
+
+/* 项目内容标题 */
+.projectTitle {
+    color: black;
+    height: 30px;
+    font-size: 22px;
+    font-family: "宋体", sans-serif;
+}
+
+/* 项目内容最外层div */
+.projectDiv {
+    /* width: 100%; */
+    background-color: rgba(255, 255, 255, 0.5);
+    border: solid 1px beige;
+}
+
+/* 项目内容每一格外div */
+.projectDiv > div {
+    height: 377px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+.projectDiv > div:hover {
+    box-shadow: 4px 4px 4px 4px rgba(187, 187, 187, 0.5);
+    border-radius: 3%;
+}
+
+/* 项目内容每一格内div */
+.projectDiv > div > div {
+    border-radius: 4%;
+    border: solid 5px rgba(119, 119, 119, 0.2);
+}
+
+/* 项目内容每一格里的图片 */
+.projectDiv > div > div > img {
+    height: 200px;
+    width: 100%;
+    border-radius: 3% 3% 0px 0px;
+    object-fit: cover;
+}
+
+/* 项目内容每一格里的文字信息 */
+.projectDiv > div > div > div {
+    height: 150px;
+    width: 100%;
+    background-color: rgba(241, 252, 250, 0.6);
+    border-radius: 0px 0px 6% 6%;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+/* 项目内容每一格里的文字父div */
+.Pinfo {
+    color: #B3B3B3;
+    font-size: 16px;
+    height: 148px;
+}
+
+/* 项目内容每一格里的文字所有div */
+.Pinfo > div {
+    margin-top: 6px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+/* 项目内容每一格里的文字名字 */
+.Pname {
+    height: 45px;
+    font-weight: initial;
+    overflow: hidden;
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+}
+
+/* 项目内容每一格里的用户名 */
+.Uname {
+    color: rgba(92, 214, 190, 0.8);
+    padding-bottom: 5px;
+}
+
+/*项目阶段文字信息*/
+.Pstage {
+    float: right;
+    padding: 0.5%;
+    margin-right: 2%;
+    border: 1px solid rosybrown;
+}
+
+/*项目阶段文字颜色*/
+.PstageC1 {
+    color: white;
+    background-color: darkseagreen;
+}
+
+.PstageC2 {
+    color: white;
+    background-color: coral;
+}
+
+.PstageC3 {
+    color: gainsboro;
+    background-color: darkgrey;
+}
+
+
+/* 项目内容每一格里的统计div */
+.Pamount {
+    color: #007DDB;
+    font-weight: bold;
+}
+
+/* 项目内容每一格里的百分比 */
+.Ppercent {
+    color: #B3B3B3;
+
+}
+
+/* 项目内容每一格里的支持数 */
+.Psupport {
+    font-size: 13px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+/*去除输入款的边款*/
+.rm1 {
+    cursor: default;
+    border: none;
+}
+
+/*隐藏*/
+.noDisplay {
+    display: none;
+}
